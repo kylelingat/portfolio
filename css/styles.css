@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #E74C3C;
+}
+
+#inroContainer {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#introText {
+  color: white;
+  text-align: center;
+}
+
+#introText h1,
+#introText h2 {
+  font-family: 'Roboto';
+}
+
+#introText h1 {
+  letter-spacing: 10px;
+  font-size: 5em;
+}
+
+#introText h2 {
+  margin-top: 5px;
+  letter-spacing: 5px;
+  font-size: 2em;
+}
+
+#contactBar a {
+  text-decoration: none;
+  color: white;
+}
+
+#contactBar i {
+  font-size: 3em;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(.17,.67,.83,.67)
+}
+
+#contactBar i:hover {
+  transform: scale(1.07);
+  color: #3cd7e7;
+}
