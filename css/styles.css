@@ -71,7 +71,7 @@ body {
 
 #arrowDown {
   position: absolute;
-  bottom: 30px;
+  bottom: 1em;
 }
 
 #arrowDown i {
