@@ -205,6 +205,10 @@ body {
   letter-spacing: 2.5px;
 }
 
+#sectionContainer {
+  display: grid;
+}
+
 #contactMeGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
