@@ -221,7 +221,7 @@ body {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 90%;
 }
 
 /* The Close Button */
@@ -239,6 +239,9 @@ body {
     cursor: pointer;
 }
 
+.modal-content h1 {
+  text-align: center;
+}
 @media only screen and (max-width : 1024px){
 #projectGridContainer {
   grid-template-columns: 1fr;

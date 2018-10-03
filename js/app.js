@@ -17,6 +17,8 @@ var span = document.getElementsByClassName("close")[0];
 
 $(".projectGridItem").click(function() {
   modal.style.display = "block";
+  var projName = $(this).find(".projectTitle").text()
+  $("#projName").text(projName)
 });
 
 
