@@ -71,7 +71,7 @@ body {
 
 #arrowDown {
   position: absolute;
-  bottom: 1em;
+  bottom: 10px;
 }
 
 #arrowDown i {
@@ -129,7 +129,6 @@ body {
 
 
 .projectTitle {
-
 }
 
 .projectTitle h2 {
