@@ -40,6 +40,7 @@ var span = document.getElementsByClassName("close")[0];
 
 $(".projectGridItem").click(function() {
     modal.style.display = "block";
+    $('body').css("overflow", "hidden");
     var projName = $(this).find(".projectTitle").text()
     $("#projName").text(projName);
     if ($(this).attr("id") == "hackSeaContainer"){
@@ -66,10 +67,12 @@ $(".projectGridItem").click(function() {
 
 span.onclick = function() {
     modal.style.display = "none";
+    $('body').css("overflow", "scroll");
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        $('body').css("overflow", "scroll");
     }
 }
