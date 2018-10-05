@@ -1,6 +1,6 @@
 :root {
-    --main-color: #E74C3C;
-    --secondary-color: #3c82e7;
+    --main-color: #247BA0;
+    --secondary-color: #FF1654;
     --third-color: #3ce7a2;
 }
 
@@ -8,7 +8,27 @@
 body {
   margin: 0;
   height: 100%;
-  background-color: var(--main-color);
+  background: linear-gradient(50deg, #247ba0, #70c1b3, #b2dbbf);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
 }
 
 #inroContainer {
@@ -21,7 +41,7 @@ body {
 }
 
 #introText {
-  color: white;
+  color: #E0E0E0;
   text-align: center;
   border-left: 13px solid white;
   padding: 4em;
@@ -51,7 +71,7 @@ body {
 
 #contactBar a {
   text-decoration: none;
-  color: white;
+  color: #E0E0E0;
 }
 
 #contactBar i {
@@ -66,7 +86,7 @@ body {
 #arrowDown i:hover {
   transform: scale(1.04);
   transform-origin: center;
-  color: #3cd7e7;
+  color: var(--secondary-color)
 }
 
 #arrowDown {
@@ -116,7 +136,7 @@ body {
 }
 
 .projectGridItem:hover {
-  border: 1px solid #909090;
+  border: 1px solid #707070;
 }
 
 .projectImageBackground {
@@ -222,6 +242,8 @@ body {
     padding: 20px;
     border: 1px solid #888;
     width: 90%;
+    height: 75%;
+    overflow-y: scroll;
 }
 
 /* The Close Button */
@@ -241,7 +263,26 @@ body {
 
 .modal-content h1 {
   text-align: center;
+  font-family: 'Lato';
+  color: #303030;
+  opacity: 0.8;
+  letter-spacing: 1.5px;
+  font-size: 1.5em;
 }
+
+#modalInfoContainer {
+  width: 85%;
+  margin: auto;
+  padding-top: 1.5em;
+}
+
+#projImg {
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat:   no-repeat;
+}
+
 @media only screen and (max-width : 1024px){
 #projectGridContainer {
   grid-template-columns: 1fr;
