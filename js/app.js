@@ -6,31 +6,31 @@ $("#arrowDown").click(function() {
 });
 
 var hackSeaInfo = {
-    img: "url(../images/hacksea.png)",
+    img: "url(../portfolio/images/hacksea.png)",
     description: "For this project"
 }
 
 var haccInfo = {
-    img: "url(../images/hacc.png)",
+    img: "url(../portfolio/images/hacc.png)",
     description: "For this projectss"
 }
 
 var bluePlanetInfo = {
-    img: "url(../images/blueplanet.png)",
+    img: "url(../portfolio/images/blueplanet.png)",
     description: "For this projectssssssss444ssssss"
 }
 
 var marvelApiInfo = {
-    img: "url(../images/marvelApi.png)",
+    img: "url(../portfolio/images/marvelApi.png)",
     description: "For this projectssss3333sss"
 }
 
 var sushiInfo = {
-    img: "url(../images/kunio.png)",
+    img: "url(../portfolio/images/kunio.png)",
     description: "For this projectss12123sss"
 }
 var constructionInfo = {
-    img: "url(../images/construction.png)",
+    img: "url(../portfolio/images/construction.png)",
     description: "For this projectzxczxcssss"
 }
 
