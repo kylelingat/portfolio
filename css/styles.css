@@ -282,10 +282,71 @@ body {
 }
 
 #projImg {
-  width: 100%;
+  display: grid;
+  grid-template-rows: 95% 5%;
+  grid-row-gap: 4em;
+  grid-template-columns: 50% 50%;
   height: 700px;
+}
+
+#projImgContainer {
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-repeat:   no-repeat;
+  grid-column-end: span 2;
+}
+
+#projDesc {
+  width: 100%;
+  margin-top: 5.5em;
+  font-family: 'Roboto';
+}
+
+#visitSiteButton {
+  grid-column-start: 1;
+  text-align: center;
+}
+
+#visitGithubButton {
+  grid-column-start: 2;
+  text-align: center;
+}
+
+#visitSiteButton a,
+#visitGithubButton a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+#visitSiteButton a {
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border: 2px solid var(--secondary-color);
+}
+
+#visitSiteButton a:hover {
+  color:var(--secondary-color);
+  background-color: transparent;
+}
+
+#visitGithubButton a {
+  color: white;
+  background-color: #003780;
+  padding: 10px;
+  border: 2px solid #003780;
+}
+
+#visitGithubButton a:hover {
+  color: #003780;
+  background-color: transparent;
 }
 
 @media only screen and (max-width : 1024px){
