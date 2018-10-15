@@ -242,7 +242,7 @@ body {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%;
+    width: 95%;
     height: 75%;
     overflow-y: scroll;
 }
@@ -296,11 +296,16 @@ body {
   background-size: cover;
   background-repeat:   no-repeat;
   grid-column-end: span 2;
+  border-radius: 2px;
 }
 
 #projDesc {
-  width: 100%;
-  font-family: 'Roboto';
+  width: 90%;
+  margin: auto;
+  font-family: 'Helvetica';
+  font-size: 1em;
+  letter-spacing: 1.2px;
+  line-height: 2.4em;
   grid-column-end: span 2;
 }
 
@@ -367,5 +372,8 @@ body {
 }
 #projImg {
   height: 500px;
+}
+#projImgContainer {
+  background-position: center;
 }
 }
