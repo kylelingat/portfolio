@@ -13,6 +13,7 @@ body {
   -webkit-animation: AnimationName 30s ease infinite;
   -moz-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes AnimationName {
@@ -323,12 +324,12 @@ body {
   letter-spacing: 2px;
   transition: 0.3s;
   border-radius: 4px;
+  padding: 10px;
 }
 
 #visitSiteButton a {
   color: white;
   background-color: var(--secondary-color);
-  padding: 10px;
   border: 2px solid var(--secondary-color);
 }
 
@@ -340,7 +341,6 @@ body {
 #visitGithubButton a {
   color: white;
   background-color: #003780;
-  padding: 10px;
   border: 2px solid #003780;
 }
 
@@ -359,5 +359,13 @@ body {
 
 #projectTitle h2 {
   font-size: 15px;
+}
+#visitSiteButton a,
+#visitGithubButton a {
+  padding: 8px;
+  font-size: 12px;
+}
+#projImg {
+  height: 500px;
 }
 }
