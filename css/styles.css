@@ -284,7 +284,7 @@ body {
 
 #projImg {
   display: grid;
-  grid-template-rows: 95% 5%;
+  grid-template-rows: 90% 5% 5%;
   grid-row-gap: 4em;
   grid-template-columns: 50% 50%;
   height: 700px;
@@ -300,8 +300,8 @@ body {
 
 #projDesc {
   width: 100%;
-  margin-top: 5.5em;
   font-family: 'Roboto';
+  grid-column-end: span 2;
 }
 
 #visitSiteButton {
