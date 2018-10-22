@@ -145,6 +145,7 @@ $(".projectGridItem").click(function() {
 
     } else if ($(this).attr("id") == "hacc4EduContainer"){
       $("#modalContentGrid").empty();
+      generateHTML("hacc")
       // $("#projImg").css("background-image", haccInfo.img);
       // $("#projDesc").text(haccInfo.description);
       // $("#visitSiteButton > a").attr("href", haccInfo.site);
