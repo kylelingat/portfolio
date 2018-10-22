@@ -105,15 +105,6 @@ function generateHTML(project){
   document.getElementById("modalContentGrid").appendChild(imgContainer3)
   document.getElementById("modalContentGrid").appendChild(projDesc3)
 
-
-  console.log(imgContainer)
-  console.log(visitSiteButton)
-  console.log(visitGithubButton)
-  console.log(projDesc)
-  console.log(imgContainer2)
-  console.log(projDesc2)
-  console.log(imgContainer3)
-  console.log(projDesc3)
 }
 
 
@@ -127,11 +118,6 @@ $(".projectGridItem").click(function() {
     var projName = $(this).find(".projectTitle").text()
     $("#projName").text(projName);
     if ($(this).attr("id") == "hackSeaContainer"){
-        //
-        // $("#projImg2").css("background-image", hackSeaInfo.img2);
-        // $("#description2").text(hackSeaInfo.description2);
-        // $("#projImg3").css("background-image", hackSeaInfo.img3);
-        // $("#description3").text(hackSeaInfo.description3);
         $("#modalContentGrid").empty();
         generateHTML("hackSea")
         $("#hackSeaImg1").css("background-image", hackSeaInfo.img);
