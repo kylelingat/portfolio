@@ -5,52 +5,87 @@ $("#arrowDown").click(function() {
         'slow');
 });
 
-var hackSeaInfo = {
-    img: "url(./images/hacksea.png)",
-    description: "This project was a hackathon project that placed second overall. The challenge was to design a website that improves debris reporting efficiency. I worked with a team of 5 (including me) and I took the role of the website designer and front-end developer. The main page follows a simple rounded box layout that links to the other pages. Every page has a vertical navigation menu.",
-    img2: "url(./images/hacksea2.png)",
-    description2: "This report debris page serves as a form for users to submit debris. This page improves reporting efficiency because it has better design and lets the user know what information to submit. The layout was made via CSS grid. The form doesn't actually 'submit' because we couldn't build a back-end in under 24 hours so it just submits mock data. ",
-    img3: "url(./images/hacksea3.png)",
-    description3: "This page is where you can see other users' reported debris and if you click on the debris it opens a modal that includes more information about the debris like who submitted it, the description, and the type which is basically everything you submitted from your form. You can also comment on the debris to give what you think about it and communicate with others to plan possible debris cleaning.",
-    site: "https://kylelingat.github.io/hack-for-the-sea/",
-    gitHub: "https://github.com/kylelingat/hack-for-the-sea"
+
+var projects = {
+    hackSeaInfo: {
+        title: "Hack for the Sea Hackathon 2nd Place",
+        mainImg: "url(./images/hacksea.png)",
+        description: "This project was a hackathon project that placed second overall. The challenge was to design a website that improves debris reporting efficiency. I worked with a team of 5 (including me) and I took the role of the website designer and front-end developer. The main page follows a simple rounded box layout that links to the other pages. Every page has a vertical navigation menu.",
+        img2: "url(./images/hacksea2.png)",
+        description2: "This report debris page serves as a form for users to submit debris. This page improves reporting efficiency because it has better design and lets the user know what information to submit. The layout was made via CSS grid. The form doesn't actually 'submit' because we couldn't build a back-end in under 24 hours so it just submits mock data. ",
+        img3: "url(./images/hacksea3.png)",
+        description3: "This page is where you can see other users' reported debris and if you click on the debris it opens a modal that includes more information about the debris like who submitted it, the description, and the type which is basically everything you submitted from your form. You can also comment on the debris to give what you think about it and communicate with others to plan possible debris cleaning.",
+        site: "https://kylelingat.github.io/hack-for-the-sea/",
+        gitHub: "https://github.com/kylelingat/hack-for-the-sea"
+    },
+
+    haccInfo: {
+        title: "HACC4Edu Hackathon 1st Place",
+        mainImg: "url(./images/hacc.png)",
+        description: "For this projectss",
+        site: "https://zakattack9.github.io/HACC4Edu/",
+        gitHub: "https://github.com/kylelingat/HACC4Edu"
+    },
+
+    bluePlanetInfo: {
+        title: "BluePlanet Foundation Project",
+        mainImg: "url(./images/blueplanet.png)",
+        description: "For this projectssssssss444ssssss",
+        site: "http://infinite-power.s3-website-us-west-2.amazonaws.com/",
+        gitHub: "https://github.com/AOE-Dylan/BluePlanet-Project"
+    },
+
+    marvelApiInfo: {
+        title: "Marvel API Project",
+        mainImg: "url(./images/marvelApi.png)",
+        description: "For this projectssss3333sss",
+        site: "https://kylelingat.github.io/marvel-api/",
+        gitHub: "https://github.com/kylelingat/marvel-api"
+    },
+
+    sushiInfo: {
+        title: "Sushi Website Mockup",
+        mainImg: "url(./images/kunio.png)",
+        description: "For this projectss12123sss",
+        site: "https://kylelingat.github.io/sushiwebsite/",
+        gitHub: "https://github.com/kylelingat/sushiwebsite"
+    },
+    constructionInfo: {
+        title: "Construction Website Mockup",
+        mainImg: "url(./images/construction.png)",
+        description: "For this projectzxczxcssss",
+        site: "https://kylelingat.github.io/construction-company-website/",
+        gitHub: "https://github.com/kylelingat/construction-company-website"
+    },
 }
 
-var haccInfo = {
-    img: "url(./images/hacc.png)",
-    description: "For this projectss",
-    site: "https://zakattack9.github.io/HACC4Edu/",
-    gitHub: "https://github.com/kylelingat/HACC4Edu"
+for (var key in projects) {
+    var projectGridItem = document.createElement("div");
+    projectGridItem.id = `${key}Container`
+    projectGridItem.className = 'projectGridItem';
+    $("#projectGridContainer").append(projectGridItem);
+    var projectImageBackground = document.createElement("div");
+    projectImageBackground.className = "projectImageBackground";
+    $(projectGridItem).append(projectImageBackground);
+    var projectImage = document.createElement("div");
+    projectImage.className = "projectImage";
+    $(projectImageBackground).append(projectImage)
+    $(projectImage).css("background-image", projects[key].mainImg)
+    var projectTitle = document.createElement("div");
+    projectTitle.className = "projectTitle";
+    var projectTitleText = document.createElement("h2")
+    $(projectTitle).append(projectTitleText)
+    $(projectTitleText).text(projects[key].title)
+    $(projectGridItem).append(projectTitle)
 }
-
-var bluePlanetInfo = {
-    img: "url(./images/blueplanet.png)",
-    description: "For this projectssssssss444ssssss",
-    site: "http://infinite-power.s3-website-us-west-2.amazonaws.com/",
-    gitHub: "https://github.com/AOE-Dylan/BluePlanet-Project"
-}
-
-var marvelApiInfo = {
-    img: "url(./images/marvelApi.png)",
-    description: "For this projectssss3333sss",
-    site: "https://kylelingat.github.io/marvel-api/",
-    gitHub: "https://github.com/kylelingat/marvel-api"
-}
-
-var sushiInfo = {
-    img: "url(./images/kunio.png)",
-    description: "For this projectss12123sss",
-    site: "https://kylelingat.github.io/sushiwebsite/",
-    gitHub: "https://github.com/kylelingat/sushiwebsite"
-}
-var constructionInfo = {
-    img: "url(./images/construction.png)",
-    description: "For this projectzxczxcssss",
-    site: "https://kylelingat.github.io/construction-company-website/",
-    gitHub: "https://github.com/kylelingat/construction-company-website"
-}
-
-function generateHTML(project){
+function generateHTML(project) {
+    if (project === "hackSea") {
+        $("#modalContentGrid").empty();
+        var projImg = document.createElement("div");
+        projImg.className = 'projImg'
+        $(projImg).css("background-image", projects.hackSeaInfo.mainImg);
+        $('.contentContainer').append(projImg)
+    }
 }
 
 
@@ -61,20 +96,11 @@ var span = document.getElementsByClassName("close")[0];
 $(".projectGridItem").click(function() {
     modal.style.display = "block";
     $('body').css("overflow", "hidden");
-    // var projName = $(this).find(".projectTitle").text()
-    // $("#projName").text(projName);
-    // if ($(this).attr("id") == "hackSeaContainer"){
-    //     $("#modalContentGrid").empty();
-    //     generateHTML("hackSea")
-    //     $("#hackSeaImg1").css("background-image", hackSeaInfo.img);
-    //     $("#visitSiteButton > a").attr("href", hackSeaInfo.site);
-    //     $("#visitGithubButton > a").attr("href", hackSeaInfo.gitHub);
-    //     $("#hackSeaDesc1").text(hackSeaInfo.description);
-    //     $("#hackSeaImg2").css("background-image", hackSeaInfo.img2);
-    //     $("#hackSeaDesc2").text(hackSeaInfo.description2);
-    //     $("#hackSeaImg3").css("background-image", hackSeaInfo.img3);
-    //     $("#hackSeaDesc3").text(hackSeaInfo.description3);
-    //
+    var projName = $(this).find(".projectTitle").text();
+    $("#projName").text(projName);
+    if ($(this).attr("id") == "hackSeaInfoContainer") {
+        generateHTML("hackSea");
+    }
     // } else if ($(this).attr("id") == "hacc4EduContainer"){
     //   $("#modalContentGrid").empty();
     //   generateHTML("hacc")
