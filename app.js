@@ -117,6 +117,14 @@ function generateHTML(project) {
         $('.buttonGrid').append(visitSiteButton);
         $('.buttonGrid').append(visitGithubButton);
 
+        var projDesc = document.createElement("div");
+        projDesc.className = "projDesc";
+        var projDescText = document.createElement("h1");
+        projDescText.className = "projDescText";
+        $(projDescText).text(projects.hackSeaInfo.description)
+        $(projDesc).append(projDescText);
+        $('.contentContainer').append(projDesc)
+
 
         // var projImg = document.createElement("div");
         // projImg.className = "projImg";

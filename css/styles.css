@@ -325,6 +325,19 @@ body {
   background-color: transparent;
 }
 
+.projDesc {
+  width: 80%;
+  margin: auto;
+}
+
+.projDesc h1{
+  font-family: 'Roboto';
+  font-size: 0.9em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
 }
 /* The Close Button */
 .close {
