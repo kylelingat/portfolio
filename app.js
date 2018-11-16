@@ -64,27 +64,70 @@ for (var key in projects) {
     projectGridItem.id = `${key}Container`
     projectGridItem.className = 'projectGridItem';
     $("#projectGridContainer").append(projectGridItem);
+
     var projectImageBackground = document.createElement("div");
     projectImageBackground.className = "projectImageBackground";
     $(projectGridItem).append(projectImageBackground);
+
     var projectImage = document.createElement("div");
     projectImage.className = "projectImage";
     $(projectImageBackground).append(projectImage)
     $(projectImage).css("background-image", projects[key].mainImg)
+
     var projectTitle = document.createElement("div");
     projectTitle.className = "projectTitle";
     var projectTitleText = document.createElement("h2")
     $(projectTitle).append(projectTitleText)
     $(projectTitleText).text(projects[key].title)
+
     $(projectGridItem).append(projectTitle)
 }
 function generateHTML(project) {
     if (project === "hackSea") {
-        $("#modalContentGrid").empty();
+        $(".contentContainer").empty();
+
+        var projImageBackground = document.createElement("div");
+        projImageBackground.id = "hackSeaImg1"
+        projImageBackground.className = "projImageBackground";
+        $('.contentContainer').append(projImageBackground);
+
         var projImg = document.createElement("div");
-        projImg.className = 'projImg'
+        projImg.className = "projImg";
         $(projImg).css("background-image", projects.hackSeaInfo.mainImg);
-        $('.contentContainer').append(projImg)
+        $(projImageBackground).append(projImg)
+        $('.contentContainer').append(projImageBackground);
+
+        var buttonGrid = document.createElement("div");
+        buttonGrid.className = "buttonGrid";
+        $(".contentContainer").append(buttonGrid);
+        var visitSiteButton = document.createElement("div")
+        visitSiteButton.className = "visitSiteButton";
+        var siteA = document.createElement("a");
+        $(siteA).attr("target", "_blank");
+        $(siteA).attr("href", projects.hackSeaInfo.site);
+        $(siteA).text("Visit Site")
+        $(visitSiteButton).append(siteA);
+        var visitGithubButton = document.createElement("div")
+        visitGithubButton.className = "visitGithubButton";
+        var githubA = document.createElement("a");
+        $(githubA).attr("target", "_blank");
+        $(githubA).attr("href", projects.hackSeaInfo.gitHub);
+        $(githubA).text("Visit Github")
+        $(visitGithubButton).append(githubA);
+        $('.buttonGrid').append(visitSiteButton);
+        $('.buttonGrid').append(visitGithubButton);
+
+
+        // var projImg = document.createElement("div");
+        // projImg.className = "projImg";
+        // $(projImg).css("background-image", projects.hackSeaInfo.mainImg);
+        // $('.contentContainer').append(projImg)
+    } else if (project === "hacc"){
+      $(".contentContainer").empty();
+      var projImg = document.createElement("div");
+      projImg.className = 'projImg'
+      $(projImg).css("background-image", projects.haccInfo.mainImg);
+      $('.contentContainer').append(projImg);
     }
 }
 
@@ -98,16 +141,12 @@ $(".projectGridItem").click(function() {
     $('body').css("overflow", "hidden");
     var projName = $(this).find(".projectTitle").text();
     $("#projName").text(projName);
-    if ($(this).attr("id") == "hackSeaInfoContainer") {
+    if ($(this).attr("id") === "hackSeaInfoContainer") {
         generateHTML("hackSea");
+    } else if ($(this).attr("id") === "haccInfoContainer"){
+      $("#modalContentGrid").empty();
+      generateHTML("hacc");
     }
-    // } else if ($(this).attr("id") == "hacc4EduContainer"){
-    //   $("#modalContentGrid").empty();
-    //   generateHTML("hacc")
-    //   // $("#projImg").css("background-image", haccInfo.img);
-    //   // $("#projDesc").text(haccInfo.description);
-    //   // $("#visitSiteButton > a").attr("href", haccInfo.site);
-    //   // $("#visitGithubButton > a").attr("href", haccInfo.gitHub);
     // } else if ($(this).attr("id") == "bluePlanetContainer"){
     //   $("#modalContentGrid").empty();
     //   // $("#projImg").css("background-image", bluePlanetInfo.img);
