@@ -202,11 +202,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white;
 }
 
 .topBar h1 {
@@ -226,17 +227,24 @@ body {
   background-color: #E0E0E0;
   margin: 1em;
   padding: 1em;
-  height: 100%;
+  /* height: 100%; */
   border-radius: 10px;
   /* border: 1px solid #D0D0D0; */
   display: grid;
-  grid-template-rows: 60% 10%;
-  grid-gap: 1em;
+  grid-template-rows: auto;
+  grid-gap: 2.5em;
 }
 
 #hackSeaImg1 {
-  background-color: #4eec91;
-  height: 100%;
+  height: 486px;
+}
+
+#hackSeaImg2 {
+  height: 486px;
+}
+
+#hackSeaImg3 {
+  height: 486px;
 }
 
 .projImageBackground {
@@ -258,8 +266,10 @@ body {
 .buttonGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 75%;
+  width: 100%;
   margin: auto;
+  font-size: 12px;
+  /* grid-gap: 12px; */
 }
 
 .visitSiteButton {
@@ -284,6 +294,7 @@ body {
   transition: 0.3s;
   border-radius: 4px;
   padding: 10px;
+  text-align: center;
 }
 
 .visitGithubButton {
@@ -332,10 +343,10 @@ body {
 
 .projDesc h1{
   font-family: 'Roboto';
-  font-size: 0.9em;
+  font-size: 0.95em;
   font-weight: lighter;
   letter-spacing: 1px;
-  line-height: 30px;
+  line-height: 33px;
 }
 
 }

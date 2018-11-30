@@ -123,7 +123,54 @@ function generateHTML(project) {
         projDescText.className = "projDescText";
         $(projDescText).text(projects.hackSeaInfo.description)
         $(projDesc).append(projDescText);
-        $('.contentContainer').append(projDesc)
+        $('.contentContainer').append(projDesc);
+
+        var projImageBackground2 = document.createElement("div");
+        projImageBackground2.id = "hackSeaImg2"
+        projImageBackground2.className = "projImageBackground";
+        $('.contentContainer').append(projImageBackground2);
+
+        var projImg2 = document.createElement("div");
+        projImg2.className = "projImg";
+        $(projImg2).css("background-image", projects.hackSeaInfo.img2);
+        $(projImageBackground2).append(projImg2)
+        $('.contentContainer').append(projImageBackground2);
+
+        var projDesc2 = document.createElement("div");
+        projDesc2.className = "projDesc";
+        var projDescText2 = document.createElement("h1");
+        projDescText2.className = "projDescText";
+        $(projDescText2).text(projects.hackSeaInfo.description2);
+        $(projDesc2).append(projDescText2);
+        $('.contentContainer').append(projDesc2);
+
+
+
+
+
+
+
+
+
+
+        var projImageBackground3 = document.createElement("div");
+        projImageBackground3.id = "hackSeaImg3"
+        projImageBackground3.className = "projImageBackground";
+        $('.contentContainer').append(projImageBackground3);
+
+        var projImg3 = document.createElement("div");
+        projImg3.className = "projImg";
+        $(projImg3).css("background-image", projects.hackSeaInfo.img3);
+        $(projImageBackground3).append(projImg3)
+        $('.contentContainer').append(projImageBackground3);
+
+        var projDesc3 = document.createElement("div");
+        projDesc3.className = "projDesc";
+        var projDescText3 = document.createElement("h1");
+        projDescText3.className = "projDescText";
+        $(projDescText3).text(projects.hackSeaInfo.description3);
+        $(projDesc3).append(projDescText3);
+        $('.contentContainer').append(projDesc3);
 
 
         // var projImg = document.createElement("div");
