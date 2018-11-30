@@ -1,7 +1,7 @@
 :root {
     --main-color: #247BA0;
     --secondary-color: #FF1654;
-    --third-color: #3ce7a2;
+    --third-color: #8E44AD;
     --fourth-color: #e73c81;
 }
 
@@ -109,13 +109,14 @@ body {
   text-align: center;
   padding-top: 1.5em;
   opacity: 0.7;
+  font-size: 1.5em;
 }
 
 #projectGridContainer {
   padding-top: 1.5em;
   padding-bottom: 3em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   grid-gap: 30px;
   width: 95%;
   margin: auto;
@@ -126,11 +127,12 @@ body {
   height: 30em;
   margin: auto;
   display: grid;
-  grid-template-rows: 88% 12%;
+  grid-template-rows: 2fr 1fr 1fr;
   border-radius: 2px;
-  border: 1px solid #C0C0C0;
+  border: 1px solid transparent;
   transition: 0.3s cubic-bezier(.17,.67,.83,.67);
   cursor: pointer;
+  padding-bottom: 30px;
 }
 
 .projectGridItem:hover {
@@ -155,7 +157,8 @@ body {
   opacity: 0.85;
   letter-spacing: 1.5px;
   font-weight: 700;
-  font-size: 19px;
+  margin: 0px;
+  font-size: 15px;
 }
 
 .projectImage {
@@ -165,6 +168,7 @@ body {
   margin: auto;
   background-size: cover;
   background-position: center;
+  border-radius: 5px;
 }
 
 .modal {
@@ -265,7 +269,7 @@ body {
 
 .buttonGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   margin: auto;
   font-size: 12px;
@@ -321,6 +325,29 @@ body {
   padding: 10px;
 }
 
+.moreInfoButton {
+  height: 100%;
+  width: 100%;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.moreInfoButton a {
+  color: white;
+  text-decoration: none;
+  font-family: "Lato";
+  font-weight: bolder;
+  letter-spacing: 2px;
+  background-color: var(--third-color);
+  border: 2px solid var(--third-color);
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-radius: 4px;
+  padding: 10px;
+}
 
 
 
@@ -333,6 +360,11 @@ body {
 
 .visitGithubButton a:hover {
   color: var(--secondary-color);
+  background-color: transparent;
+}
+
+.moreInfoButton a:hover{
+  color: var(--third-color);
   background-color: transparent;
 }
 
@@ -372,8 +404,18 @@ body {
 }
 #introText {
   border-left: none;
+  padding: 0px;
 }
 
+#introText h1 {
+  font-size: 2.1em;
+  letter-spacing: 4px;
+}
+
+#introText h2 {
+  font-size: 1.3em;
+  letter-spacing: 3px;
+}
 #projectTitle h2 {
   font-size: 15px;
 }

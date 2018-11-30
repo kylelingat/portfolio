@@ -15,49 +15,62 @@ var projects = {
         description2: "This report debris page serves as a form for users to submit debris. This page improves reporting efficiency because it has better design and lets the user know what information to submit. The layout was made via CSS grid. The form doesn't actually 'submit' because we couldn't build a back-end in under 24 hours so it just submits mock data. ",
         img3: "url(./images/hacksea3.png)",
         description3: "This page is where you can see other users' reported debris and if you click on the debris it opens a modal that includes more information about the debris like who submitted it, the description, and the type which is basically everything you submitted from your form. You can also comment on the debris to give what you think about it and communicate with others to plan possible debris cleaning.",
-        site: "https://kylelingat.github.io/hack-for-the-sea/",
-        gitHub: "https://github.com/kylelingat/hack-for-the-sea"
+        urls: {
+          site: "https://kylelingat.github.io/hack-for-the-sea/",
+          gitHub: "https://github.com/kylelingat/hack-for-the-sea"
+      }
     },
 
     haccInfo: {
         title: "HACC4Edu Hackathon 1st Place",
         mainImg: "url(./images/hacc.png)",
         description: "For this projectss",
-        site: "https://zakattack9.github.io/HACC4Edu/",
-        gitHub: "https://github.com/kylelingat/HACC4Edu"
+        urls: {
+            site: "https://zakattack9.github.io/HACC4Edu/",
+            gitHub: "https://github.com/kylelingat/HACC4Edu"
+        }
     },
 
     bluePlanetInfo: {
         title: "BluePlanet Foundation Project",
         mainImg: "url(./images/blueplanet.png)",
         description: "For this projectssssssss444ssssss",
-        site: "http://infinite-power.s3-website-us-west-2.amazonaws.com/",
-        gitHub: "https://github.com/AOE-Dylan/BluePlanet-Project"
+        urls: {
+            site: "http://infinite-power.s3-website-us-west-2.amazonaws.com/",
+            gitHub: "https://github.com/AOE-Dylan/BluePlanet-Project"
+        }
     },
 
     marvelApiInfo: {
         title: "Marvel API Project",
         mainImg: "url(./images/marvelApi.png)",
         description: "For this projectssss3333sss",
-        site: "https://kylelingat.github.io/marvel-api/",
-        gitHub: "https://github.com/kylelingat/marvel-api"
+        urls: {
+            site: "https://kylelingat.github.io/marvel-api/",
+            gitHub: "https://github.com/kylelingat/marvel-api"
+        }
     },
 
     sushiInfo: {
         title: "Sushi Website Mockup",
         mainImg: "url(./images/kunio.png)",
         description: "For this projectss12123sss",
-        site: "https://kylelingat.github.io/sushiwebsite/",
-        gitHub: "https://github.com/kylelingat/sushiwebsite"
+        urls: {
+            site: "https://kylelingat.github.io/sushiwebsite/",
+            gitHub: "https://github.com/kylelingat/sushiwebsite"
+        }
     },
     constructionInfo: {
         title: "Construction Website Mockup",
         mainImg: "url(./images/construction.png)",
         description: "For this projectzxczxcssss",
-        site: "https://kylelingat.github.io/construction-company-website/",
-        gitHub: "https://github.com/kylelingat/construction-company-website"
+        urls: {
+            site: "https://kylelingat.github.io/construction-company-website/",
+            gitHub: "https://github.com/kylelingat/construction-company-website"
+        }
     },
 }
+
 
 for (var key in projects) {
     var projectGridItem = document.createElement("div");
@@ -72,7 +85,8 @@ for (var key in projects) {
     var projectImage = document.createElement("div");
     projectImage.className = "projectImage";
     $(projectImageBackground).append(projectImage)
-    $(projectImage).css("background-image", projects[key].mainImg)
+    $(projectImage).css("background-image", projects[key].mainImg);
+
 
     var projectTitle = document.createElement("div");
     projectTitle.className = "projectTitle";
@@ -80,109 +94,135 @@ for (var key in projects) {
     $(projectTitle).append(projectTitleText)
     $(projectTitleText).text(projects[key].title)
 
-    $(projectGridItem).append(projectTitle)
+    $(projectGridItem).append(projectTitle);
+
+    var buttonGrid = document.createElement("div");
+    buttonGrid.className = "buttonGrid";
+    $(projectGridItem).append(buttonGrid);
+
+    var visitSiteButton = document.createElement("div")
+    visitSiteButton.className = "visitSiteButton";
+    var siteA = document.createElement("a");
+    $(siteA).attr("target", "_blank");
+    $(siteA).text("Visit Site")
+    $(visitSiteButton).append(siteA);
+
+    var visitGithubButton = document.createElement("div")
+    visitGithubButton.className = "visitGithubButton";
+    var githubA = document.createElement("a");
+    $(githubA).attr("target", "_blank");
+    $(githubA).text("Visit Github")
+    $(visitGithubButton).append(githubA);
+
+    var moreInfoButton = document.createElement("div");
+    moreInfoButton.className = 'moreInfoButton';
+    var infoA = document.createElement("a");
+    $(infoA).attr("target", "_blank");
+    $(infoA).text("More info")
+    $(moreInfoButton).append(infoA);
+
+    $(buttonGrid).append(visitSiteButton);
+    $(buttonGrid).append(visitGithubButton);
+    $(buttonGrid).append(moreInfoButton);
+
+
 }
+
 function generateHTML(project) {
     if (project === "hackSea") {
         $(".contentContainer").empty();
 
-        var projImageBackground = document.createElement("div");
-        projImageBackground.id = "hackSeaImg1"
-        projImageBackground.className = "projImageBackground";
-        $('.contentContainer').append(projImageBackground);
-
-        var projImg = document.createElement("div");
-        projImg.className = "projImg";
-        $(projImg).css("background-image", projects.hackSeaInfo.mainImg);
-        $(projImageBackground).append(projImg)
-        $('.contentContainer').append(projImageBackground);
-
-        var buttonGrid = document.createElement("div");
-        buttonGrid.className = "buttonGrid";
-        $(".contentContainer").append(buttonGrid);
-        var visitSiteButton = document.createElement("div")
-        visitSiteButton.className = "visitSiteButton";
-        var siteA = document.createElement("a");
-        $(siteA).attr("target", "_blank");
-        $(siteA).attr("href", projects.hackSeaInfo.site);
-        $(siteA).text("Visit Site")
-        $(visitSiteButton).append(siteA);
-        var visitGithubButton = document.createElement("div")
-        visitGithubButton.className = "visitGithubButton";
-        var githubA = document.createElement("a");
-        $(githubA).attr("target", "_blank");
-        $(githubA).attr("href", projects.hackSeaInfo.gitHub);
-        $(githubA).text("Visit Github")
-        $(visitGithubButton).append(githubA);
-        $('.buttonGrid').append(visitSiteButton);
-        $('.buttonGrid').append(visitGithubButton);
-
-        var projDesc = document.createElement("div");
-        projDesc.className = "projDesc";
-        var projDescText = document.createElement("h1");
-        projDescText.className = "projDescText";
-        $(projDescText).text(projects.hackSeaInfo.description)
-        $(projDesc).append(projDescText);
-        $('.contentContainer').append(projDesc);
-
-        var projImageBackground2 = document.createElement("div");
-        projImageBackground2.id = "hackSeaImg2"
-        projImageBackground2.className = "projImageBackground";
-        $('.contentContainer').append(projImageBackground2);
-
-        var projImg2 = document.createElement("div");
-        projImg2.className = "projImg";
-        $(projImg2).css("background-image", projects.hackSeaInfo.img2);
-        $(projImageBackground2).append(projImg2)
-        $('.contentContainer').append(projImageBackground2);
-
-        var projDesc2 = document.createElement("div");
-        projDesc2.className = "projDesc";
-        var projDescText2 = document.createElement("h1");
-        projDescText2.className = "projDescText";
-        $(projDescText2).text(projects.hackSeaInfo.description2);
-        $(projDesc2).append(projDescText2);
-        $('.contentContainer').append(projDesc2);
-
-
-
-
-
-
-
-
-
-
-        var projImageBackground3 = document.createElement("div");
-        projImageBackground3.id = "hackSeaImg3"
-        projImageBackground3.className = "projImageBackground";
-        $('.contentContainer').append(projImageBackground3);
-
-        var projImg3 = document.createElement("div");
-        projImg3.className = "projImg";
-        $(projImg3).css("background-image", projects.hackSeaInfo.img3);
-        $(projImageBackground3).append(projImg3)
-        $('.contentContainer').append(projImageBackground3);
-
-        var projDesc3 = document.createElement("div");
-        projDesc3.className = "projDesc";
-        var projDescText3 = document.createElement("h1");
-        projDescText3.className = "projDescText";
-        $(projDescText3).text(projects.hackSeaInfo.description3);
-        $(projDesc3).append(projDescText3);
-        $('.contentContainer').append(projDesc3);
+        // var projImageBackground = document.createElement("div");
+        // projImageBackground.id = "hackSeaImg1"
+        // projImageBackground.className = "projImageBackground";
+        // $('.contentContainer').append(projImageBackground);
+        //
+        // var projImg = document.createElement("div");
+        // projImg.className = "projImg";
+        // $(projImg).css("background-image", projects.hackSeaInfo.mainImg);
+        // $(projImageBackground).append(projImg)
+        // $('.contentContainer').append(projImageBackground);
+        //
+        // var buttonGrid = document.createElement("div");
+        // buttonGrid.className = "buttonGrid";
+        // $(".contentContainer").append(buttonGrid);
+        // var visitSiteButton = document.createElement("div")
+        // visitSiteButton.className = "visitSiteButton";
+        // var siteA = document.createElement("a");
+        // $(siteA).attr("target", "_blank");
+        // $(siteA).attr("href", projects.hackSeaInfo.site);
+        // $(siteA).text("Visit Site")
+        // $(visitSiteButton).append(siteA);
+        // var visitGithubButton = document.createElement("div")
+        // visitGithubButton.className = "visitGithubButton";
+        // var githubA = document.createElement("a");
+        // $(githubA).attr("target", "_blank");
+        // $(githubA).attr("href", projects.hackSeaInfo.gitHub);
+        // $(githubA).text("Visit Github")
+        // $(visitGithubButton).append(githubA);
+        // $('.buttonGrid').append(visitSiteButton);
+        // $('.buttonGrid').append(visitGithubButton);
+        //
+        // var projDesc = document.createElement("div");
+        // projDesc.className = "projDesc";
+        // var projDescText = document.createElement("h1");
+        // projDescText.className = "projDescText";
+        // $(projDescText).text(projects.hackSeaInfo.description)
+        // $(projDesc).append(projDescText);
+        // $('.contentContainer').append(projDesc);
+        //
+        // var projImageBackground2 = document.createElement("div");
+        // projImageBackground2.id = "hackSeaImg2"
+        // projImageBackground2.className = "projImageBackground";
+        // $('.contentContainer').append(projImageBackground2);
+        //
+        // var projImg2 = document.createElement("div");
+        // projImg2.className = "projImg";
+        // $(projImg2).css("background-image", projects.hackSeaInfo.img2);
+        // $(projImageBackground2).append(projImg2)
+        // $('.contentContainer').append(projImageBackground2);
+        //
+        // var projDesc2 = document.createElement("div");
+        // projDesc2.className = "projDesc";
+        // var projDescText2 = document.createElement("h1");
+        // projDescText2.className = "projDescText";
+        // $(projDescText2).text(projects.hackSeaInfo.description2);
+        // $(projDesc2).append(projDescText2);
+        // $('.contentContainer').append(projDesc2);
+        //
+        //
+        //
+        //
+        // var projImageBackground3 = document.createElement("div");
+        // projImageBackground3.id = "hackSeaImg3"
+        // projImageBackground3.className = "projImageBackground";
+        // $('.contentContainer').append(projImageBackground3);
+        //
+        // var projImg3 = document.createElement("div");
+        // projImg3.className = "projImg";
+        // $(projImg3).css("background-image", projects.hackSeaInfo.img3);
+        // $(projImageBackground3).append(projImg3)
+        // $('.contentContainer').append(projImageBackground3);
+        //
+        // var projDesc3 = document.createElement("div");
+        // projDesc3.className = "projDesc";
+        // var projDescText3 = document.createElement("h1");
+        // projDescText3.className = "projDescText";
+        // $(projDescText3).text(projects.hackSeaInfo.description3);
+        // $(projDesc3).append(projDescText3);
+        // $('.contentContainer').append(projDesc3);
 
 
         // var projImg = document.createElement("div");
         // projImg.className = "projImg";
         // $(projImg).css("background-image", projects.hackSeaInfo.mainImg);
         // $('.contentContainer').append(projImg)
-    } else if (project === "hacc"){
-      $(".contentContainer").empty();
-      var projImg = document.createElement("div");
-      projImg.className = 'projImg'
-      $(projImg).css("background-image", projects.haccInfo.mainImg);
-      $('.contentContainer').append(projImg);
+    } else if (project === "hacc") {
+        $(".contentContainer").empty();
+        var projImg = document.createElement("div");
+        projImg.className = 'projImg'
+        $(projImg).css("background-image", projects.haccInfo.mainImg);
+        $('.contentContainer').append(projImg);
     }
 }
 
@@ -198,9 +238,9 @@ $(".projectGridItem").click(function() {
     $("#projName").text(projName);
     if ($(this).attr("id") === "hackSeaInfoContainer") {
         generateHTML("hackSea");
-    } else if ($(this).attr("id") === "haccInfoContainer"){
-      $("#modalContentGrid").empty();
-      generateHTML("hacc");
+    } else if ($(this).attr("id") === "haccInfoContainer") {
+        $("#modalContentGrid").empty();
+        generateHTML("hacc");
     }
     // } else if ($(this).attr("id") == "bluePlanetContainer"){
     //   $("#modalContentGrid").empty();
