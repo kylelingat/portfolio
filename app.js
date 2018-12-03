@@ -10,7 +10,7 @@ var projects = {
     hackSeaInfo: {
         title: "Hack for the Sea Hackathon 2nd Place",
         mainImg: "url(./images/hacksea.png)",
-        description: "This project was a hackathon project that placed second overall. The challenge was to design a website that improves debris reporting efficiency. I worked with a team of 5 (including me) and I took the role of the website designer and front-end developer. The main page follows a simple rounded box layout that links to the other pages. Every page has a vertical navigation menu.",
+        description: "This project was a hackathon project that placed second overall. The challenge was to design a website that improves debris reporting efficiency. I worked with a team of 5 (including me) and I took the role of the website designer and front-end developer.",
         img2: "url(./images/hacksea2.png)",
         description2: "This report debris page serves as a form for users to submit debris. This page improves reporting efficiency because it has better design and lets the user know what information to submit. The layout was made via CSS grid. The form doesn't actually 'submit' because we couldn't build a back-end in under 24 hours so it just submits mock data. ",
         img3: "url(./images/hacksea3.png)",
@@ -78,21 +78,20 @@ for (var key in projects) {
     projectGridItem.className = 'projectGridItem';
     $("#projectGridContainer").append(projectGridItem);
 
-    var projectImageBackground = document.createElement("div");
-    projectImageBackground.className = "projectImageBackground";
-    $(projectGridItem).append(projectImageBackground);
 
     var projectImage = document.createElement("div");
     projectImage.className = "projectImage";
-    $(projectImageBackground).append(projectImage)
+    $(projectGridItem).append(projectImage)
     $(projectImage).css("background-image", projects[key].mainImg);
-
 
     var projectTitle = document.createElement("div");
     projectTitle.className = "projectTitle";
     var projectTitleText = document.createElement("h2")
     $(projectTitle).append(projectTitleText)
     $(projectTitleText).text(projects[key].title)
+    var projectInformation = document.createElement("p");
+    $(projectInformation).text(projects[key].description)
+    $(projectTitle).append(projectInformation);
 
     $(projectGridItem).append(projectTitle);
 
