@@ -230,7 +230,7 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
-$(".projectGridItem").click(function() {
+$(".moreInfoButton").click(function() {
     modal.style.display = "block";
     $('body').css("overflow", "hidden");
     var projName = $(this).find(".projectTitle").text();
