@@ -103,6 +103,7 @@ for (var key in projects) {
     visitSiteButton.className = "visitSiteButton";
     var siteA = document.createElement("a");
     $(siteA).attr("target", "_blank");
+    $(siteA).attr("href", projects[key].urls.site);
     $(siteA).text("Visit Site")
     $(visitSiteButton).append(siteA);
 
@@ -110,6 +111,7 @@ for (var key in projects) {
     visitGithubButton.className = "visitGithubButton";
     var githubA = document.createElement("a");
     $(githubA).attr("target", "_blank");
+    $(githubA).attr("href", projects[key].urls.gitHub);
     $(githubA).text("Visit Github")
     $(visitGithubButton).append(githubA);
 
@@ -123,6 +125,9 @@ for (var key in projects) {
     $(buttonGrid).append(visitSiteButton);
     $(buttonGrid).append(visitGithubButton);
     $(buttonGrid).append(moreInfoButton);
+    console.log(projects[key].urls.site)
+
+
 
 
 }
