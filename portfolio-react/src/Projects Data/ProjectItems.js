@@ -1,9 +1,11 @@
 import React from "react";
 import '../Projects/Projects.js';
+import image1 from '../images/hacksea.png'
+import projectData from '../Projects Data/ProjectData.js'
 
 const ProjectItem = (props) => {
   var projectImageBackground = {
-    backgroundImage: "url(" + "../images/hacksea.png" + ")"
+    backgroundImage: `url(${props.image})`
   };
 
   return (
@@ -17,10 +19,10 @@ const ProjectItem = (props) => {
     </div>
     <div className="buttonGrid">
       <div className="visitSiteButton">
-        <a target="_blank">Visit Site</a>
+        <a href={props.hrefSite} target="_blank">Visit Site</a>
       </div>
       <div className="visitGithubButton">
-        <a target="_blank">Visit Github</a>
+        <a href={props.hrefGit} target="_blank">Visit Github</a>
       </div>
       <div className="moreInfoButton">
         <a target="_blank">More info</a>

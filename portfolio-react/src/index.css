@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
 
 :root {
-  --main-color: #247BA0;
-  --secondary-color: #FF1654;
-  --third-color: #378024;
-  --fourth-color: #e73c81;
+  --main-color: #230827;
+  --secondary-color: #ff5454;
+  --third-color: #ff813c;
+  --fourth-color: #491647;
 }
 
 
@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
