@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './Main.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+library.add(faEnvelope)
+library.add(faGithub)
 
-library.add(faIgloo)
 
 const Main = () => { 
     return (
@@ -14,13 +16,12 @@ const Main = () => {
             <h1>Kyle Lingat</h1>
             <h2>Front End Web Developer</h2>
             <div id="contactBar">
-                <FontAwesomeIcon icon="igloo" />
-                <a href="https://github.com/kylelingat" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:kylejlingat@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/kylelingat" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="mailto:kylejlingat@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
             </div>
         </div>
         <div id="arrowDown">
-            <i class="far fa-arrow-alt-circle-down"></i>
+            <i className="far fa-arrow-alt-circle-down"></i>
         </div>
         </div>
     )

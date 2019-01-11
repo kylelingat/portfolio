@@ -41,7 +41,7 @@
     color: #E0E0E0;
   }
   
-  #contactBar i {
+  #contactBar svg {
     font-size: 3em;
     padding: 3px;
     margin-right: 10px;
@@ -49,8 +49,8 @@
     transition: 0.3s cubic-bezier(.17,.67,.83,.67);
   }
   
-  #contactBar i:hover,
-  #arrowDown i:hover {
+  #contactBar svg:hover,
+  #arrowDown svg:hover {
     transform: scale(1.04);
     transform-origin: center;
     color: var(--third-color);
@@ -61,7 +61,7 @@
     bottom: 10px;
   }
   
-  #arrowDown i {
+  #arrowDown svg {
     font-size: 5em;
     color: white;
     transition: 0.3s cubic-bezier(.17,.67,.83,.67);
