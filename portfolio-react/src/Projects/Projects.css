@@ -31,7 +31,6 @@
     border-radius: 4px;
     border: 1px solid transparent;
     transition: 0.3s cubic-bezier(.17,.67,.83,.67);
-    cursor: pointer;
     /* padding-bottom: 30px; */
   }
   
@@ -164,6 +163,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    cursor: pointer;
   }
   
   .moreInfoButton a {

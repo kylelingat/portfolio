@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './Main.css'
+import React, { Component } from 'react';
+import './Main.css';
+import Projects from '../Projects/Projects.js'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -10,8 +10,19 @@ library.add(faEnvelope)
 library.add(faArrowCircleDown)
 library.add(faGithub)
 
+console.log(document.getElementById('t'))
+console.log(<Projects />)
 
-const Main = () => { 
+class Main extends Component { 
+    
+
+    scrollHandler = (item) => {
+        window.scrollTo({
+            top:item.offsetTop, 
+            behavior: "smooth"   // Optional, adds animation
+        })
+    }
+    render(){
     return (
         <div id="inroContainer">
         <div id="introText">
@@ -23,10 +34,11 @@ const Main = () => {
             </div>
         </div>
         <div id="arrowDown">
-            <FontAwesomeIcon icon={faArrowCircleDown} />
+            <FontAwesomeIcon icon={faArrowCircleDown} onClick={this.scrollHandler.bind(this, <Projects />)} />
         </div>
         </div>
     )
+    }
 }
 
 export default Main;

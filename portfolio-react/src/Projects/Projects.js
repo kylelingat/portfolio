@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Projects.css';
+import Main from '../Main/Main.js'
 import ProjectItem from '../Projects Data/ProjectItems.js';
 import projectData from '../Projects Data/ProjectData.js'
 
-const Projects = () => { 
+class Projects extends Component { 
+    render(){
     return (
         <div id="projectsContainer">
         <h1 id="t">Projects</h1>
@@ -14,5 +16,6 @@ const Projects = () => {
         </div>
     </div>
     )
+    }
 }
 export default Projects;
