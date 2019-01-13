@@ -13,6 +13,10 @@ class Projects extends Component {
         <ProjectItem title={projectData.hackSeaInfo.title} desc={projectData.hackSeaInfo.description} image={projectData.hackSeaInfo.mainImg} hrefSite={projectData.hackSeaInfo.urls.site} hrefGit={projectData.hackSeaInfo.urls.gitHub} />
         <ProjectItem title={projectData.haccInfo.title} desc={projectData.haccInfo.description} image={projectData.haccInfo.mainImg} hrefSite={projectData.haccInfo.urls.site}
         hrefGit={projectData.haccInfo.urls.gitHub} />
+        <ProjectItem title={projectData.bluePlanetInfo.title} desc={projectData.bluePlanetInfo.description} image={projectData.bluePlanetInfo.mainImg} hrefSite={projectData.bluePlanetInfo.urls.site}
+        hrefGit={projectData.bluePlanetInfo.urls.gitHub} />
+        <ProjectItem title={projectData.marvelApiInfo.title} desc={projectData.marvelApiInfo.description} image={projectData.marvelApiInfo.mainImg} hrefSite={projectData.marvelApiInfo.urls.site}
+        hrefGit={projectData.marvelApiInfo.urls.gitHub} />
         </div>
     </div>
     )

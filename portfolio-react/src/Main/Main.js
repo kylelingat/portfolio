@@ -10,17 +10,15 @@ library.add(faEnvelope)
 library.add(faArrowCircleDown)
 library.add(faGithub)
 
-console.log(document.getElementById('t'))
 console.log(<Projects />)
 
 class Main extends Component { 
     
 
     scrollHandler = (item) => {
-        window.scrollTo({
-            top:item.offsetTop, 
-            behavior: "smooth"   // Optional, adds animation
-        })
+        console.log('help')
+        console.log(item)
+        // item.scrollIntoView();
     }
     render(){
     return (
@@ -34,7 +32,8 @@ class Main extends Component {
             </div>
         </div>
         <div id="arrowDown">
-            <FontAwesomeIcon icon={faArrowCircleDown} onClick={this.scrollHandler.bind(this, <Projects />)} />
+        <a href="#t"><FontAwesomeIcon icon={faArrowCircleDown} onClick={this.scrollHandler.bind(this, <Projects />)} /></a>
+         
         </div>
         </div>
     )

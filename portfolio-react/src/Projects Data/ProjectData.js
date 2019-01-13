@@ -1,7 +1,7 @@
 import hackSeaMain from '../images/hacksea.png'
 import haccMain from '../images/hacc.png'
 import bluePlanetMain from '../images/blueplanet.png'
-import marvelApiMain from '../images/marvelApi.png'
+import marvelApiMain from '../images/marvelApi.png' 
 
 var projectData = {
     hackSeaInfo: {
