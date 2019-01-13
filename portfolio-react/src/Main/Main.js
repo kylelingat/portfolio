@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Main.css';
 import Projects from '../Projects/Projects.js'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -14,12 +15,6 @@ console.log(<Projects />)
 
 class Main extends Component { 
     
-
-    scrollHandler = (item) => {
-        console.log('help')
-        console.log(item)
-        // item.scrollIntoView();
-    }
     render(){
     return (
         <div id="inroContainer">
@@ -32,7 +27,9 @@ class Main extends Component {
             </div>
         </div>
         <div id="arrowDown">
-        <a href="#t"><FontAwesomeIcon icon={faArrowCircleDown} onClick={this.scrollHandler.bind(this, <Projects />)} /></a>
+        <AnchorLink href='#t'>
+             <FontAwesomeIcon icon={faArrowCircleDown} />
+        </AnchorLink>
          
         </div>
         </div>
