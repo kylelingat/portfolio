@@ -1,7 +1,6 @@
 import React from "react";
-import '../Projects/Projects.js';
-import image1 from '../images/hacksea.png'
-import projectData from '../Projects Data/ProjectData.js'
+import Projects from '../Projects/Projects.js';
+import InfoButton from '../Info Button/Info Button.js'
 
 const ProjectItem = (props) => {
   var projectImageBackground = {
@@ -24,9 +23,7 @@ const ProjectItem = (props) => {
       <div className="visitGithubButton">
         <a href={props.hrefGit} target="_blank">Visit Github</a>
       </div>
-      <div className="moreInfoButton">
-        <a target="_blank">More info</a>
-      </div>
+      <InfoButton />
     </div>
   </div>
   );

@@ -11,8 +11,6 @@ library.add(faEnvelope)
 library.add(faArrowCircleDown)
 library.add(faGithub)
 
-console.log(<Projects />)
-
 class Main extends Component { 
     
     render(){
