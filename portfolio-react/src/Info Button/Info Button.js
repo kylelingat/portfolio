@@ -3,12 +3,18 @@ import Modal from "../Modal/Modal.js";
 
 class InfoButton extends Component {
   state = {
-    modalOpen: false
+    modalOpen: false,
+    projectParent: null
   };
-
+  
+  constructor(props){
+    super(props)
+    console.log(props)
+    this.state = {
+      projectParent: props.project
+     };
+  }
   infoClickHandler = () => {
-    console.log("hey");
-    console.log(this);
     const doesShow = this.state.modalOpen;
     this.setState({ modalOpen: !doesShow });
   };
@@ -21,7 +27,7 @@ class InfoButton extends Component {
         </div>
         {this.state.modalOpen === true ? (
           <div>
-            <Modal />
+            <Modal test={'hello'}/>
           </div>
         ) : null}
       </div>

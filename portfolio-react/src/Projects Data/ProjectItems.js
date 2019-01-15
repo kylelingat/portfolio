@@ -1,6 +1,6 @@
 import React from "react";
-import Projects from '../Projects/Projects.js';
 import InfoButton from '../Info Button/Info Button.js'
+import projectData from '../Projects Data/ProjectData.js'
 
 const ProjectItem = (props) => {
   var projectImageBackground = {
@@ -8,7 +8,7 @@ const ProjectItem = (props) => {
   };
 
   return (
-    <div id="hackSeaInfoContainer" className="projectGridItem">
+    <div className="projectGridItem">
     <div className="projectImage" style={projectImageBackground}></div>
     <div className="projectTitle">
       <h2>{props.title}</h2>
@@ -23,7 +23,25 @@ const ProjectItem = (props) => {
       <div className="visitGithubButton">
         <a href={props.hrefGit} target="_blank">Visit Github</a>
       </div>
-      <InfoButton />
+
+      {props.title === projectData.hackSeaInfo.title ? (
+          <div>
+            <InfoButton project="hackSea" />
+          </div>
+        ) : props.title === projectData.haccInfo.title ? (
+          <div>
+            <InfoButton project={'haccEdu'}/>
+          </div>
+        ) : props.title === projectData.bluePlanetInfo.title ? (
+          <div>
+            <InfoButton project={'bluePlanet'}/>
+          </div>
+        ) : props.title === projectData.marvelApiInfo.title ? (
+          <div>
+            <InfoButton project={'marvelApi'}/>
+          </div>
+        ) : null
+        }
     </div>
   </div>
   );
