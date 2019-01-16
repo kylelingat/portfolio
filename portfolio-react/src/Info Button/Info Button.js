@@ -29,6 +29,7 @@ class InfoButton extends Component {
             <a target="_blank" onClick={this.infoClickHandler} >More info</a>
             <Modal title={projectData.hackSeaInfo.title}
                    desc={projectData.hackSeaInfo.description}
+                   image={projectData.hackSeaInfo.mainImg}
                    infoClickHandler={this.infoClickHandler}
                    project={this.props.project} 
                    />
