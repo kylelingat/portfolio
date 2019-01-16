@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
 
 :root {
-  --main-color: #230827;
-  --secondary-color: #ff5454;
-  --third-color: #ff813c;
-  --fourth-color: #491647;
+  --main-color: #222431;
+  --secondary-color: #e187d5;
+  --third-color: #8c9ec9;
+  --fourth-color: #608cac;
+  --fifth-color:  #272C39;
 }
 
 

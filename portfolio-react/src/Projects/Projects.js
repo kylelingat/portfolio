@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Projects.css';
 import ProjectItem from '../Projects Data/ProjectItems.js';
 import projectData from '../Projects Data/ProjectData.js'
-import InfoButton from '../Info Button/Info Button';
 
 class Projects extends Component { 
 

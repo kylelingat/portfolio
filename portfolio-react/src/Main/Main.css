@@ -51,7 +51,7 @@
   
   #contactBar svg:hover,
   #arrowDown svg:hover {
-    transform: scale(1.04);
+    transform: scale(1.05);
     transform-origin: center;
     color: var(--third-color);
   }

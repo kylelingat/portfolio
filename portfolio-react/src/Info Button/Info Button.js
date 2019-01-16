@@ -29,7 +29,8 @@ class InfoButton extends Component {
             <a target="_blank" onClick={this.infoClickHandler} >More info</a>
             <Modal title={projectData.hackSeaInfo.title}
                    desc={projectData.hackSeaInfo.description}
-                   infoClickHandler={this.infoClickHandler} 
+                   infoClickHandler={this.infoClickHandler}
+                   project={this.props.project} 
                    />
           </div>
       </div>
@@ -41,7 +42,8 @@ class InfoButton extends Component {
             <a target="_blank" onClick={this.infoClickHandler} >More info</a>
             <Modal title={projectData.haccInfo.title}
                    desc={projectData.haccInfo.description}
-                   infoClickHandler={this.infoClickHandler}  
+                   infoClickHandler={this.infoClickHandler}
+                   project={this.props.project}   
                    />
           </div>
       </div>
@@ -53,7 +55,8 @@ class InfoButton extends Component {
             <a target="_blank" onClick={this.infoClickHandler} >More info</a>
             <Modal title={projectData.bluePlanetInfo.title}
                    desc={projectData.bluePlanetInfo.description}
-                   infoClickHandler={this.infoClickHandler}  
+                   infoClickHandler={this.infoClickHandler}
+                   project={this.props.project}   
                    />
           </div>
       </div>
@@ -65,7 +68,8 @@ class InfoButton extends Component {
             <a target="_blank" onClick={this.infoClickHandler} >More info</a>
             <Modal title={projectData.marvelApiInfo.title}
                    desc={projectData.marvelApiInfo.description}
-                   infoClickHandler={this.infoClickHandler}  
+                   infoClickHandler={this.infoClickHandler}
+                   project={this.props.project}   
                    />
           </div>
       </div>
