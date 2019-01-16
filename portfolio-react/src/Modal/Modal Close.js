@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
+import InfoButton from '../Info Button/Info Button';
 
 class ModalClose extends Component {
-    state = {
-        modalOpen: true
-      };
-    
-      closeClickHandler = () => {
-        const doesntShow = this.state.modalOpen;
-        this.setState({ modalOpen: !doesntShow });
-      };
+    constructor(props){
+        super(props)
+    }
+
+    closeClickHandler = () => {
+
+    }
     render(){
-        return <span onClick={this.closeClickHandler} className="close">&times;</span>
+        return <span onClick={this.props.infoClickHandler} className="close">&times;</span>
     }
 }
 

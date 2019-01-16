@@ -10,7 +10,6 @@ class InfoButton extends Component {
   
   constructor(props){
     super(props)
-    console.log(props, 'Projects passed')
     this.state = {
       projectParent: props.project
      };
@@ -18,8 +17,8 @@ class InfoButton extends Component {
 
   infoClickHandler = () => {
     const doesShow = this.state.modalOpen;
-    this.setState({ modalOpen: true });
-    console.log('s')
+    this.setState({ modalOpen: !this.state.modalOpen });
+    console.log(this.props, 'Info Button clicked')
   };
 
   render() {
@@ -29,7 +28,8 @@ class InfoButton extends Component {
           <div className="moreInfoButton">
             <a target="_blank" onClick={this.infoClickHandler} >More info</a>
             <Modal title={projectData.hackSeaInfo.title}
-                   desc={projectData.hackSeaInfo.description} 
+                   desc={projectData.hackSeaInfo.description}
+                   infoClickHandler={this.infoClickHandler} 
                    />
           </div>
       </div>
@@ -40,7 +40,32 @@ class InfoButton extends Component {
           <div className="moreInfoButton">
             <a target="_blank" onClick={this.infoClickHandler} >More info</a>
             <Modal title={projectData.haccInfo.title}
-                   desc={projectData.haccInfo.description} 
+                   desc={projectData.haccInfo.description}
+                   infoClickHandler={this.infoClickHandler}  
+                   />
+          </div>
+      </div>
+      )
+    } else if (this.state.modalOpen === true && this.state.projectParent === 'bluePlanet'){
+      return (          
+        <div>
+          <div className="moreInfoButton">
+            <a target="_blank" onClick={this.infoClickHandler} >More info</a>
+            <Modal title={projectData.bluePlanetInfo.title}
+                   desc={projectData.bluePlanetInfo.description}
+                   infoClickHandler={this.infoClickHandler}  
+                   />
+          </div>
+      </div>
+      )
+    } else if (this.state.modalOpen === true && this.state.projectParent === 'marvelApi'){
+      return (          
+        <div>
+          <div className="moreInfoButton">
+            <a target="_blank" onClick={this.infoClickHandler} >More info</a>
+            <Modal title={projectData.marvelApiInfo.title}
+                   desc={projectData.marvelApiInfo.description}
+                   infoClickHandler={this.infoClickHandler}  
                    />
           </div>
       </div>
