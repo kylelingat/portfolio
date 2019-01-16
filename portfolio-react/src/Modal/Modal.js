@@ -6,7 +6,7 @@ const Modal = ( props ) => {
       <div id="myModal" className="modal">
         <div className="modal-content">
           <span className="close">&times;</span>
-          <p>{props.test}</p>
+          <p>{props.title}</p>
         </div>
       </div>
     );
