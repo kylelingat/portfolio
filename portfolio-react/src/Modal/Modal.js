@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Modal.css";
+import projectData from '../Projects Data/ProjectData.js'
+import {HackSeaModal, HaccModal, BPModal, MarvelModal} from './Modal Projects.js'
 
 class Modal extends Component {
   state = {
@@ -14,9 +16,13 @@ class Modal extends Component {
     };
   }
 
-  projectImageBackground = {
-    backgroundImage: `url(${this.props.image})`
-  };
+  modalContentHandler = (button) => {
+    if(button === "previous"){
+      console.log("previous")
+    } else if(button === "next"){
+      console.log("next")
+    }
+  }
 
   render() {
     return (
@@ -29,18 +35,23 @@ class Modal extends Component {
             </span>
           </div>
           <div className="bottomBar">
-            <div className="contentContainer">
-            <div className="modalProjectImage" style={this.projectImageBackground}></div>
               {this.state.currentProj === "hackSea" ? (
                 <div>
-                  hackSea Content
+                  <HackSeaModal modalContentHandler={this.modalContentHandler} />
                 </div>
               ) : this.state.currentProj === 'haccEdu' ? (
                 <div>
-                  haccEdu Content
+                  <HaccModal />
               </div>
-              ) : null}
-            </div>
+              ) : this.state.currentProj === "bluePlanet" ? (
+                <div>
+                  <BPModal />
+                </div>
+              ) : this.state.currentProj === 'marvelApi' ? (
+                <div>
+                  <MarvelModal />
+              </div>
+              ) : null }
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@
     width: 93%;
     height: 100%;
     display: grid;
-    grid-template-rows: 5% 95%;
+    grid-template-rows: 10% 90%;
     cursor: auto;
 }
 
@@ -71,7 +71,10 @@
 }
 
 .contentContainer {
-  background-color: #E0E0E0;
+  background-color: #39445c;
+  font-family: 'Roboto';
+  text-align: left;
+  color: white;
   margin: 1em;
   padding: 1em;
   /* height: 100%; */
@@ -92,4 +95,29 @@
   margin-left: 0px;
   grid-row-end: span 3;
   border-radius: 4px 0px 0px 4px;
+}
+
+.modalDescription {
+  width: 90%;
+  margin: auto;
+  font-size: 1.2em;
+  line-height: 30px;
+}
+
+.modalSwitchContainer {
+  background-color: red;
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.previousSwitch {
+  width: 100%;
+  background-color: green;
+}
+
+.nextSwitch {
+  width: 100%;
+  background-color: purple;
 }
