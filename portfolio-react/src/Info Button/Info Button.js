@@ -31,8 +31,7 @@ class InfoButton extends Component {
 
   infoClickHandler = () => {
     const doesShow = this.state.modalOpen;
-    this.setState({ modalOpen: !this.state.modalOpen });
-    this.setState({ projectParent: this.props.project });
+    this.setState({ modalOpen: !this.state.modalOpen, projectParent: this.props.project  });
   };
 
   render() {
