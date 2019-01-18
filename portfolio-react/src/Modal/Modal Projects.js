@@ -61,6 +61,11 @@ export class HackSeaModal extends Component {
 }
 
 export class HaccModal extends Component {
+    state = {
+    previous: "hackSea",
+    next: "bluePlanet"
+  };
+
   constructor(props) {
     super(props);
     console.log(props);
@@ -86,6 +91,10 @@ export class HaccModal extends Component {
               <p className="modalDescription">
                 {projectData.haccInfo.description}
               </p>
+              <div className="modalSwitchContainer">
+                    <div className="previousSwitch" onClick={this.props.modalContentHandler.bind(this, "previous", this.state.previous)}>Previous</div>
+                    <div className="nextSwitch" onClick={this.props.modalContentHandler.bind(this, "next", this.state.next)}>Next</div>
+                </div>
             </div>
           </div>
         </div>
@@ -95,6 +104,11 @@ export class HaccModal extends Component {
 }
 
 export class BPModal extends Component {
+  state = {
+    previous: "haccEdu",
+    next: "marvelApi"
+  };
+
   mainImgBg = {
     backgroundImage: `url(${projectData.bluePlanetInfo.mainImg})`
   };
@@ -119,6 +133,10 @@ export class BPModal extends Component {
               <p className="modalDescription">
                 {projectData.bluePlanetInfo.description}
               </p>
+              <div className="modalSwitchContainer">
+                    <div className="previousSwitch" onClick={this.props.modalContentHandler.bind(this, "previous", this.state.previous)}>Previous</div>
+                    <div className="nextSwitch" onClick={this.props.modalContentHandler.bind(this, "next", this.state.next)}>Next</div>
+                </div>
             </div>
           </div>
         </div>
@@ -128,6 +146,11 @@ export class BPModal extends Component {
 }
 
 export class MarvelModal extends Component {
+  state = {
+    previous: "bluePlanet",
+    next: "hackSea"
+  };
+
   mainImgBg = {
     backgroundImage: `url(${projectData.marvelApiInfo.mainImg})`
   };
@@ -148,6 +171,10 @@ export class MarvelModal extends Component {
               <p className="modalDescription">
                 {projectData.marvelApiInfo.description}
               </p>
+              <div className="modalSwitchContainer">
+                    <div className="previousSwitch" onClick={this.props.modalContentHandler.bind(this, "previous", this.state.previous)}>Previous</div>
+                    <div className="nextSwitch" onClick={this.props.modalContentHandler.bind(this, "next", this.state.next)}>Next</div>
+                </div>
             </div>
           </div>
         </div>

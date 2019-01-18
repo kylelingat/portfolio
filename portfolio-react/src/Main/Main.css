@@ -53,7 +53,7 @@
   #arrowDown svg:hover {
     transform: scale(1.05);
     transform-origin: center;
-    color: var(--third-color);
+    color: var(--vGit-color);
   }
   
   #arrowDown {

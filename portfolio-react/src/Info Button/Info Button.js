@@ -59,7 +59,7 @@ class InfoButton extends Component {
             <a target="_blank" onClick={this.infoClickHandler}>
               More info
             </a>
-            <HaccModal infoClickHandler={this.infoClickHandler} />
+            <HaccModal infoClickHandler={this.infoClickHandler} modalContentHandler={this.modalContentHandler} />
           </div>
         </div>
       );
@@ -73,7 +73,7 @@ class InfoButton extends Component {
             <a target="_blank" onClick={this.infoClickHandler}>
               More info
             </a>
-            <BPModal infoClickHandler={this.infoClickHandler}/>
+            <BPModal infoClickHandler={this.infoClickHandler} modalContentHandler={this.modalContentHandler} />
           </div>
         </div>
       );
@@ -87,7 +87,7 @@ class InfoButton extends Component {
             <a target="_blank" onClick={this.infoClickHandler}>
               More info
             </a>
-            <MarvelModal infoClickHandler={this.infoClickHandler} />
+            <MarvelModal infoClickHandler={this.infoClickHandler} modalContentHandler={this.modalContentHandler} />
           </div>
         </div>
       );
