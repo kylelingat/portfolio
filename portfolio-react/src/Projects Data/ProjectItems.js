@@ -26,7 +26,7 @@ const ProjectItem = (props) => {
 
       {props.title === projectData.hackSeaInfo.title ? (
           <div>
-            <InfoButton project="hackSea" />
+            <InfoButton project={'hackSea'}  />
           </div>
         ) : props.title === projectData.haccInfo.title ? (
           <div>
