@@ -9,8 +9,18 @@ export class HackSeaModal extends Component {
 
   constructor(props) {
     super(props);
-    console.log(props);
   }
+
+  keyEventHandler = event => {
+    event = event || window.event;
+    var key = event.which || event.keyCode;
+    if (key == 37) {
+      this.props.modalContentHandler("previous", this.state.previous);
+      console.log("test");
+    } else if (key == 39) {
+      this.props.modalContentHandler("next", this.state.next);
+    }
+  };
 
   mainImgBg = {
     backgroundImage: `url(${projectData.hackSeaInfo.mainImg})`
@@ -26,7 +36,12 @@ export class HackSeaModal extends Component {
 
   render() {
     return (
-      <div id="myModal" className="modal">
+      <div
+        tabIndex="0"
+        id="myModal"
+        className="modal"
+        onKeyDown={this.keyEventHandler.bind(this)}
+      >
         <div className="modal-content">
           <div className="topBar">
             <h2 id="projName">{projectData.hackSeaInfo.title}</h2>
@@ -34,7 +49,7 @@ export class HackSeaModal extends Component {
               &times;
             </span>
           </div>
-          <div className="bottomBar">
+          <div className="midModal">
             <div className="contentContainer">
               <div className="modalProjectImage" style={this.mainImgBg} />
               <p className="modalDescription">
@@ -48,11 +63,31 @@ export class HackSeaModal extends Component {
               <p className="modalDescription">
                 {projectData.hackSeaInfo.description3}
               </p>
-              <div className="modalSwitchContainer">
-                    <div className="previousSwitch" onClick={this.props.modalContentHandler.bind(this, "previous", this.state.previous)}>Previous</div>
-                    <div className="nextSwitch" onClick={this.props.modalContentHandler.bind(this, "next", this.state.next)}>Next</div>
-                </div>
             </div>
+            <div className="bottomBar">
+            <div className="modalSwitchContainer">
+              <div
+                className="previousSwitch"
+                onClick={this.props.modalContentHandler.bind(
+                  this,
+                  "previous",
+                  this.state.previous
+                )}
+              >
+                Previous
+              </div>
+              <div
+                className="nextSwitch"
+                onClick={this.props.modalContentHandler.bind(
+                  this,
+                  "next",
+                  this.state.next
+                )}
+              >
+                Next
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -61,7 +96,7 @@ export class HackSeaModal extends Component {
 }
 
 export class HaccModal extends Component {
-    state = {
+  state = {
     previous: "hackSea",
     next: "bluePlanet"
   };
@@ -71,13 +106,29 @@ export class HaccModal extends Component {
     console.log(props);
   }
 
+  keyEventHandler = event => {
+    event = event || window.event;
+    var key = event.which || event.keyCode;
+    if (key == 37) {
+      this.props.modalContentHandler("previous", this.state.previous);
+      console.log("test");
+    } else if (key == 39) {
+      this.props.modalContentHandler("next", this.state.next);
+    }
+  };
+
   mainImgBg = {
     backgroundImage: `url(${projectData.haccInfo.mainImg})`
   };
 
   render() {
     return (
-      <div id="myModal" className="modal">
+      <div
+        tabIndex="0"
+        id="myModal"
+        className="modal"
+        onKeyDown={this.keyEventHandler.bind(this)}
+      >
         <div className="modal-content">
           <div className="topBar">
             <h2 id="projName">{projectData.haccInfo.title}</h2>
@@ -85,16 +136,34 @@ export class HaccModal extends Component {
               &times;
             </span>
           </div>
-          <div className="bottomBar">
+          <div className="midModal">
             <div className="contentContainer">
               <div className="modalProjectImage" style={this.mainImgBg} />
               <p className="modalDescription">
                 {projectData.haccInfo.description}
               </p>
               <div className="modalSwitchContainer">
-                    <div className="previousSwitch" onClick={this.props.modalContentHandler.bind(this, "previous", this.state.previous)}>Previous</div>
-                    <div className="nextSwitch" onClick={this.props.modalContentHandler.bind(this, "next", this.state.next)}>Next</div>
+                <div
+                  className="previousSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "previous",
+                    this.state.previous
+                  )}
+                >
+                  Previous
                 </div>
+                <div
+                  className="nextSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "next",
+                    this.state.next
+                  )}
+                >
+                  Next
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -109,6 +178,17 @@ export class BPModal extends Component {
     next: "marvelApi"
   };
 
+  keyEventHandler = event => {
+    event = event || window.event;
+    var key = event.which || event.keyCode;
+    if (key == 37) {
+      this.props.modalContentHandler("previous", this.state.previous);
+      console.log("test");
+    } else if (key == 39) {
+      this.props.modalContentHandler("next", this.state.next);
+    }
+  };
+
   mainImgBg = {
     backgroundImage: `url(${projectData.bluePlanetInfo.mainImg})`
   };
@@ -119,7 +199,12 @@ export class BPModal extends Component {
 
   render() {
     return (
-      <div id="myModal" className="modal">
+      <div
+        tabIndex="0"
+        id="myModal"
+        className="modal"
+        onKeyDown={this.keyEventHandler.bind(this)}
+      >
         <div className="modal-content">
           <div className="topBar">
             <h2 id="projName">{projectData.bluePlanetInfo.title}</h2>
@@ -127,16 +212,34 @@ export class BPModal extends Component {
               &times;
             </span>
           </div>
-          <div className="bottomBar">
+          <div className="midModal">
             <div className="contentContainer">
               <div className="modalProjectImage" style={this.mainImgBg} />
               <p className="modalDescription">
                 {projectData.bluePlanetInfo.description}
               </p>
               <div className="modalSwitchContainer">
-                    <div className="previousSwitch" onClick={this.props.modalContentHandler.bind(this, "previous", this.state.previous)}>Previous</div>
-                    <div className="nextSwitch" onClick={this.props.modalContentHandler.bind(this, "next", this.state.next)}>Next</div>
+                <div
+                  className="previousSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "previous",
+                    this.state.previous
+                  )}
+                >
+                  Previous
                 </div>
+                <div
+                  className="nextSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "next",
+                    this.state.next
+                  )}
+                >
+                  Next
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -151,13 +254,29 @@ export class MarvelModal extends Component {
     next: "hackSea"
   };
 
+  keyEventHandler = event => {
+    event = event || window.event;
+    var key = event.which || event.keyCode;
+    if (key == 37) {
+      this.props.modalContentHandler("previous", this.state.previous);
+      console.log("test");
+    } else if (key == 39) {
+      this.props.modalContentHandler("next", this.state.next);
+    }
+  };
+
   mainImgBg = {
     backgroundImage: `url(${projectData.marvelApiInfo.mainImg})`
   };
 
   render() {
     return (
-      <div id="myModal" className="modal">
+      <div
+        tabIndex="0"
+        id="myModal"
+        className="modal"
+        onKeyDown={this.keyEventHandler.bind(this)}
+      >
         <div className="modal-content">
           <div className="topBar">
             <h2 id="projName">{projectData.marvelApiInfo.title}</h2>
@@ -165,16 +284,34 @@ export class MarvelModal extends Component {
               &times;
             </span>
           </div>
-          <div className="bottomBar">
+          <div className="midModal">
             <div className="contentContainer">
               <div className="modalProjectImage" style={this.mainImgBg} />
               <p className="modalDescription">
                 {projectData.marvelApiInfo.description}
               </p>
               <div className="modalSwitchContainer">
-                    <div className="previousSwitch" onClick={this.props.modalContentHandler.bind(this, "previous", this.state.previous)}>Previous</div>
-                    <div className="nextSwitch" onClick={this.props.modalContentHandler.bind(this, "next", this.state.next)}>Next</div>
+                <div
+                  className="previousSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "previous",
+                    this.state.previous
+                  )}
+                >
+                  Previous
                 </div>
+                <div
+                  className="nextSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "next",
+                    this.state.next
+                  )}
+                >
+                  Next
+                </div>
+              </div>
             </div>
           </div>
         </div>

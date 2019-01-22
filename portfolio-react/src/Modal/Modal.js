@@ -16,21 +16,7 @@ class Modal extends Component {
     };
   }
 
-  // modalContentHandler = (button, test) => {
-  //   if(button === "previous"){
-  //     console.log("previous")
-  //     console.log(test)
-  //     this.setState = {
-  //       currentProj: test
-  //     }
-  //   } else if(button === "next"){
-  //     console.log("next")
-  //     console.log(test)
-  //     this.setState = {
-  //       currentProj: test
-  //     }this.setState({ projectParent: test });
-  //   }
-  // }
+
 
   render() {
     return (
