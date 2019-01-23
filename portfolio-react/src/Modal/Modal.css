@@ -9,6 +9,12 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+.modalBody {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
 /* Modal Content */
 .modal-content {
     background-color: var(--main-color);
@@ -117,6 +123,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: 9fr 1fr 9fr;
+  grid-gap: 1em;
 }
 
 .backTopSwitch p {

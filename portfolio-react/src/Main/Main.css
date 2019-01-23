@@ -67,3 +67,26 @@
     transition: 0.3s cubic-bezier(.17,.67,.83,.67);
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 768px) {
+    #introText {
+      border-left: 0px;
+      padding: 0px;
+    }
+
+    #introText h1 {
+      letter-spacing: 5px;
+      font-size: 3em;
+    }
+
+    #introText h2 {
+      letter-spacing: 3px;
+      font-size: 1.3em;
+    }
+
+    #contactBar svg, 
+    #arrowDown svg {
+      font-size: 1.4em;
+    }
+  }
+  

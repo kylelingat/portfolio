@@ -49,6 +49,7 @@ export class HackSeaModal extends Component {
         className="modal"
         onKeyDown={this.keyEventHandler.bind(this)}
       >
+        <div className="modalBody" onClick={this.props.infoClickHandler} />
         <div className="modal-content">
           <div className="topBar">
             <h2 id="projName">{projectData.hackSeaInfo.title}</h2>
@@ -147,6 +148,7 @@ export class HaccModal extends Component {
         className="modal"
         onKeyDown={this.keyEventHandler.bind(this)}
       >
+        <div className="modalBody" onClick={this.props.infoClickHandler} />
         <div className="modal-content">
           <div className="topBar">
             <h2 id="projName">{projectData.haccInfo.title}</h2>
@@ -236,6 +238,7 @@ export class BPModal extends Component {
         className="modal"
         onKeyDown={this.keyEventHandler.bind(this)}
       >
+        <div className="modalBody" onClick={this.props.infoClickHandler} />
         <div className="modal-content">
           <div className="topBar">
             <h2 id="projName">{projectData.bluePlanetInfo.title}</h2>
@@ -321,6 +324,7 @@ export class MarvelModal extends Component {
         className="modal"
         onKeyDown={this.keyEventHandler.bind(this)}
       >
+        <div className="modalBody" onClick={this.props.infoClickHandler} />
         <div className="modal-content">
           <div className="topBar">
             <h2 id="projName">{projectData.marvelApiInfo.title}</h2>
