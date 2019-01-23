@@ -127,7 +127,7 @@
     background-color: var(--vSite-color);
     border: 2px solid var(--vSite-color);
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: all 0.3s;
     border-radius: 4px;
     padding: 10px;
     text-align: center;
@@ -152,7 +152,7 @@
     background-color: var(--vGit-color);
     border: 2px solid var(--vGit-color);
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: all 0.3s;
     border-radius: 4px;
     padding: 10px;
   }
@@ -177,7 +177,7 @@
     background-color: var(--vMore-color);
     border: 2px solid var(--vMore-color);;
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: all 0.3s;
     border-radius: 4px;
     padding: 10px;
   }
@@ -187,6 +187,7 @@
   .visitSiteButton a:hover {
     color:var(--vSite-color);
     background-color: transparent;
+    filter: brightness(1.5);
   }
   
   
@@ -194,9 +195,11 @@
   .visitGithubButton a:hover {
     color: var(--vGit-color);
     background-color: transparent;
+    filter: brightness(1.5);
   }
   
   .moreInfoButton a:hover{
     color: var(--vMore-color);
     background-color: transparent;
+    filter: brightness(1.5);
   }

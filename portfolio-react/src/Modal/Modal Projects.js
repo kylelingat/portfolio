@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 import projectData from "../Projects Data/ProjectData.js";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
+library.add(faArrowLeft, faArrowRight);
+library.add(faArrowAltCircleUp);
 
 export class HackSeaModal extends Component {
   state = {
@@ -65,29 +72,40 @@ export class HackSeaModal extends Component {
               </p>
             </div>
             <div className="bottomBar">
-            <div className="modalSwitchContainer">
-              <div
-                className="previousSwitch"
-                onClick={this.props.modalContentHandler.bind(
-                  this,
-                  "previous",
-                  this.state.previous
-                )}
-              >
-                Previous
-              </div>
-              <div
-                className="nextSwitch"
-                onClick={this.props.modalContentHandler.bind(
-                  this,
-                  "next",
-                  this.state.next
-                )}
-              >
-                Next
+              <div className="modalSwitchContainer">
+                <div
+                  className="previousSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "previous",
+                    this.state.previous
+                  )}
+                >
+                  <div className="buttonArrowIcon">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                  </div>
+                  <p>Previous</p>
+                </div>
+                <div className="backTopSwitch">
+                  <p>
+                    <FontAwesomeIcon icon={faArrowAltCircleUp} />
+                  </p>
+                </div>
+                <div
+                  className="nextSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "next",
+                    this.state.next
+                  )}
+                >
+                  <p>Next</p>
+                  <div className="buttonArrowIcon">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -144,29 +162,40 @@ export class HaccModal extends Component {
               </p>
             </div>
             <div className="bottomBar">
-            <div className="modalSwitchContainer">
-              <div
-                className="previousSwitch"
-                onClick={this.props.modalContentHandler.bind(
-                  this,
-                  "previous",
-                  this.state.previous
-                )}
-              >
-                Previous
-              </div>
-              <div
-                className="nextSwitch"
-                onClick={this.props.modalContentHandler.bind(
-                  this,
-                  "next",
-                  this.state.next
-                )}
-              >
-                Next
+              <div className="modalSwitchContainer">
+                <div
+                  className="previousSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "previous",
+                    this.state.previous
+                  )}
+                >
+                  <div className="buttonArrowIcon">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                  </div>
+                  <p>Previous</p>
+                </div>
+                <div className="backTopSwitch">
+                  <p>
+                    <FontAwesomeIcon icon={faArrowAltCircleUp} />
+                  </p>
+                </div>
+                <div
+                  className="nextSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "next",
+                    this.state.next
+                  )}
+                >
+                  <p>Next</p>
+                  <div className="buttonArrowIcon">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -222,29 +251,40 @@ export class BPModal extends Component {
               </p>
             </div>
             <div className="bottomBar">
-            <div className="modalSwitchContainer">
-              <div
-                className="previousSwitch"
-                onClick={this.props.modalContentHandler.bind(
-                  this,
-                  "previous",
-                  this.state.previous
-                )}
-              >
-                Previous
-              </div>
-              <div
-                className="nextSwitch"
-                onClick={this.props.modalContentHandler.bind(
-                  this,
-                  "next",
-                  this.state.next
-                )}
-              >
-                Next
+              <div className="modalSwitchContainer">
+                <div
+                  className="previousSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "previous",
+                    this.state.previous
+                  )}
+                >
+                  <div className="buttonArrowIcon">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                  </div>
+                  <p>Previous</p>
+                </div>
+                <div className="backTopSwitch">
+                  <p>
+                    <FontAwesomeIcon icon={faArrowAltCircleUp} />
+                  </p>
+                </div>
+                <div
+                  className="nextSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "next",
+                    this.state.next
+                  )}
+                >
+                  <p>Next</p>
+                  <div className="buttonArrowIcon">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -294,32 +334,42 @@ export class MarvelModal extends Component {
               <p className="modalDescription">
                 {projectData.marvelApiInfo.description}
               </p>
-              
             </div>
             <div className="bottomBar">
-            <div className="modalSwitchContainer">
-              <div
-                className="previousSwitch"
-                onClick={this.props.modalContentHandler.bind(
-                  this,
-                  "previous",
-                  this.state.previous
-                )}
-              >
-                Previous
-              </div>
-              <div
-                className="nextSwitch"
-                onClick={this.props.modalContentHandler.bind(
-                  this,
-                  "next",
-                  this.state.next
-                )}
-              >
-                Next
+              <div className="modalSwitchContainer">
+                <div
+                  className="previousSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "previous",
+                    this.state.previous
+                  )}
+                >
+                  <div className="buttonArrowIcon">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                  </div>
+                  <p>Previous</p>
+                </div>
+                <div className="backTopSwitch">
+                  <p>
+                    <FontAwesomeIcon icon={faArrowAltCircleUp} />
+                  </p>
+                </div>
+                <div
+                  className="nextSwitch"
+                  onClick={this.props.modalContentHandler.bind(
+                    this,
+                    "next",
+                    this.state.next
+                  )}
+                >
+                  <p>Next</p>
+                  <div className="buttonArrowIcon">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>

@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import './Main.css';
-import Projects from '../Projects/Projects.js'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faArrowCircleDown } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-library.add(faEnvelope)
-library.add(faArrowCircleDown)
+library.add(faEnvelope, faArrowCircleDown)
 library.add(faGithub)
 
 class Main extends Component { 
