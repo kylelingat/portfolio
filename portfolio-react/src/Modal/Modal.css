@@ -22,7 +22,7 @@
 }
 
   /* The Close Button */
-  .close {
+  .close p {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -30,8 +30,8 @@
     transition: 0.3s cubic-bezier(.17,.67,.83,.67);
   }
   
-  .close:hover,
-  .close:focus {
+  .close p:hover,
+  .close p:focus {
     transform: scale(1.09);
     transform-origin: center;
     text-decoration: none;

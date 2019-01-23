@@ -46,7 +46,7 @@ export class HackSeaModal extends Component {
           <div className="topBar">
             <h2 id="projName">{projectData.hackSeaInfo.title}</h2>
             <span onClick={this.props.infoClickHandler} className="close">
-              &times;
+              <p>&times;</p>
             </span>
           </div>
           <div className="midModal">
@@ -133,7 +133,7 @@ export class HaccModal extends Component {
           <div className="topBar">
             <h2 id="projName">{projectData.haccInfo.title}</h2>
             <span onClick={this.props.infoClickHandler} className="close">
-              &times;
+              <p>&times;</p>
             </span>
           </div>
           <div className="midModal">
@@ -142,29 +142,31 @@ export class HaccModal extends Component {
               <p className="modalDescription">
                 {projectData.haccInfo.description}
               </p>
-              <div className="modalSwitchContainer">
-                <div
-                  className="previousSwitch"
-                  onClick={this.props.modalContentHandler.bind(
-                    this,
-                    "previous",
-                    this.state.previous
-                  )}
-                >
-                  Previous
-                </div>
-                <div
-                  className="nextSwitch"
-                  onClick={this.props.modalContentHandler.bind(
-                    this,
-                    "next",
-                    this.state.next
-                  )}
-                >
-                  Next
-                </div>
+            </div>
+            <div className="bottomBar">
+            <div className="modalSwitchContainer">
+              <div
+                className="previousSwitch"
+                onClick={this.props.modalContentHandler.bind(
+                  this,
+                  "previous",
+                  this.state.previous
+                )}
+              >
+                Previous
+              </div>
+              <div
+                className="nextSwitch"
+                onClick={this.props.modalContentHandler.bind(
+                  this,
+                  "next",
+                  this.state.next
+                )}
+              >
+                Next
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -209,7 +211,7 @@ export class BPModal extends Component {
           <div className="topBar">
             <h2 id="projName">{projectData.bluePlanetInfo.title}</h2>
             <span onClick={this.props.infoClickHandler} className="close">
-              &times;
+              <p>&times;</p>
             </span>
           </div>
           <div className="midModal">
@@ -218,29 +220,31 @@ export class BPModal extends Component {
               <p className="modalDescription">
                 {projectData.bluePlanetInfo.description}
               </p>
-              <div className="modalSwitchContainer">
-                <div
-                  className="previousSwitch"
-                  onClick={this.props.modalContentHandler.bind(
-                    this,
-                    "previous",
-                    this.state.previous
-                  )}
-                >
-                  Previous
-                </div>
-                <div
-                  className="nextSwitch"
-                  onClick={this.props.modalContentHandler.bind(
-                    this,
-                    "next",
-                    this.state.next
-                  )}
-                >
-                  Next
-                </div>
+            </div>
+            <div className="bottomBar">
+            <div className="modalSwitchContainer">
+              <div
+                className="previousSwitch"
+                onClick={this.props.modalContentHandler.bind(
+                  this,
+                  "previous",
+                  this.state.previous
+                )}
+              >
+                Previous
+              </div>
+              <div
+                className="nextSwitch"
+                onClick={this.props.modalContentHandler.bind(
+                  this,
+                  "next",
+                  this.state.next
+                )}
+              >
+                Next
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -281,7 +285,7 @@ export class MarvelModal extends Component {
           <div className="topBar">
             <h2 id="projName">{projectData.marvelApiInfo.title}</h2>
             <span onClick={this.props.infoClickHandler} className="close">
-              &times;
+              <p>&times;</p>
             </span>
           </div>
           <div className="midModal">
@@ -290,29 +294,32 @@ export class MarvelModal extends Component {
               <p className="modalDescription">
                 {projectData.marvelApiInfo.description}
               </p>
-              <div className="modalSwitchContainer">
-                <div
-                  className="previousSwitch"
-                  onClick={this.props.modalContentHandler.bind(
-                    this,
-                    "previous",
-                    this.state.previous
-                  )}
-                >
-                  Previous
-                </div>
-                <div
-                  className="nextSwitch"
-                  onClick={this.props.modalContentHandler.bind(
-                    this,
-                    "next",
-                    this.state.next
-                  )}
-                >
-                  Next
-                </div>
+              
+            </div>
+            <div className="bottomBar">
+            <div className="modalSwitchContainer">
+              <div
+                className="previousSwitch"
+                onClick={this.props.modalContentHandler.bind(
+                  this,
+                  "previous",
+                  this.state.previous
+                )}
+              >
+                Previous
+              </div>
+              <div
+                className="nextSwitch"
+                onClick={this.props.modalContentHandler.bind(
+                  this,
+                  "next",
+                  this.state.next
+                )}
+              >
+                Next
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
