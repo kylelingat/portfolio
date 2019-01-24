@@ -1,0 +1,92 @@
+#inroContainer {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #introText {
+    color: #E0E0E0;
+    text-align: center;
+    border-left: 13px solid white;
+    padding: 4em;
+  }
+  
+  #introText h1,
+  #introText h2,
+  #projectsContainer h1 {
+    font-family: 'Roboto';
+  }
+  
+  #introText h1 {
+    letter-spacing: 10px;
+    font-size: 3.5em;
+    margin: 0;
+  }
+  
+  #introText h2 {
+    letter-spacing: 5px;
+    font-size: 2em;
+    padding-top: 5px;
+  }
+  
+  #contactBar {
+    padding-top: 5px;
+  }
+  
+  #contactBar a {
+    text-decoration: none;
+    color: #E0E0E0;
+  }
+  
+  #contactBar svg {
+    font-size: 3em;
+    padding: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(.17,.67,.83,.67);
+  }
+  
+  #contactBar svg:hover,
+  #arrowDown svg:hover {
+    transform: scale(1.05);
+    transform-origin: center;
+    color: var(--vMore-color);
+  }
+  
+  #arrowDown {
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  #arrowDown svg {
+    font-size: 2.4em;
+    color: white;
+    transition: 0.3s cubic-bezier(.17,.67,.83,.67);
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #introText {
+      border-left: 0px;
+      padding: 0px;
+    }
+
+    #introText h1 {
+      letter-spacing: 5px;
+      font-size: 3em;
+    }
+
+    #introText h2 {
+      letter-spacing: 3px;
+      font-size: 1.3em;
+    }
+
+    #contactBar svg, 
+    #arrowDown svg {
+      font-size: 1.4em;
+    }
+  }
+  
