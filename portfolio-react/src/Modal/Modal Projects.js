@@ -58,7 +58,7 @@ export class HackSeaModal extends Component {
             </span>
           </div>
           <div className="midModal">
-            <div className="contentContainer">
+            <div id="topAnchor" className="contentContainer">
               <div className="modalProjectImage" style={this.mainImgBg} />
               <p className="modalDescription">
                 {projectData.hackSeaInfo.description}
@@ -88,9 +88,9 @@ export class HackSeaModal extends Component {
                   <p>Previous</p>
                 </div>
                 <div className="backTopSwitch">
-                  <p>
+                  <a href="#topAnchor">
                     <FontAwesomeIcon icon={faArrowAltCircleUp} />
-                  </p>
+                  </a>
                 </div>
                 <div
                   className="nextSwitch"
@@ -157,7 +157,7 @@ export class HaccModal extends Component {
             </span>
           </div>
           <div className="midModal">
-            <div className="contentContainer">
+            <div id="topAnchor" className="contentContainer">
               <div className="modalProjectImage" style={this.mainImgBg} />
               <p className="modalDescription">
                 {projectData.haccInfo.description}
@@ -179,9 +179,9 @@ export class HaccModal extends Component {
                   <p>Previous</p>
                 </div>
                 <div className="backTopSwitch">
-                  <p>
+                <a href="#topAnchor">
                     <FontAwesomeIcon icon={faArrowAltCircleUp} />
-                  </p>
+                  </a>
                 </div>
                 <div
                   className="nextSwitch"
@@ -247,7 +247,7 @@ export class BPModal extends Component {
             </span>
           </div>
           <div className="midModal">
-            <div className="contentContainer">
+            <div id="topAnchor" className="contentContainer">
               <div className="modalProjectImage" style={this.mainImgBg} />
               <p className="modalDescription">
                 {projectData.bluePlanetInfo.description}
@@ -269,9 +269,9 @@ export class BPModal extends Component {
                   <p>Previous</p>
                 </div>
                 <div className="backTopSwitch">
-                  <p>
+                <a href="#topAnchor">
                     <FontAwesomeIcon icon={faArrowAltCircleUp} />
-                  </p>
+                  </a>
                 </div>
                 <div
                   className="nextSwitch"
@@ -333,7 +333,7 @@ export class MarvelModal extends Component {
             </span>
           </div>
           <div className="midModal">
-            <div className="contentContainer">
+            <div id="topAnchor" className="contentContainer">
               <div className="modalProjectImage" style={this.mainImgBg} />
               <p className="modalDescription">
                 {projectData.marvelApiInfo.description}
@@ -355,9 +355,9 @@ export class MarvelModal extends Component {
                   <p>Previous</p>
                 </div>
                 <div className="backTopSwitch">
-                  <p>
+                <a href="#topAnchor">
                     <FontAwesomeIcon icon={faArrowAltCircleUp} />
-                  </p>
+                  </a>
                 </div>
                 <div
                   className="nextSwitch"

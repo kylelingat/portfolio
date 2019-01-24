@@ -168,7 +168,7 @@
   cursor: pointer;
 }
 
-.moreInfoButton a {
+.moreInfoButton .infoButtonA {
   color: white;
   text-decoration: none;
   font-family: "Lato";
@@ -207,17 +207,21 @@
 
   .projectGridItem {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-rows: auto;
   }
 
   .projectTitle {
-    margin: auto;
+    margin: 1em;
+    margin-top: 16px;
   }
 
   .projectImage {
     grid-row-start: 2;
     grid-row-end: 2;
     border-radius: 4px;
+    height: 400px;
+    width: auto;
+    margin: 1em;
   }
 
   .projectDesc {
@@ -228,6 +232,7 @@
     grid-column-start: 1;
     grid-row-start: 4;
     margin: auto;
+    margin-bottom: 16px;
   }
 }
 
@@ -235,5 +240,12 @@
   .projectTitle h2 {
     margin: auto;
     font-size: 1em;
+  }
+
+  .visitSiteButton a,
+  .visitGithubButton a,
+  .moreInfoButton a {
+    padding: 7px;
+    font-size: 10px;
   }
 }

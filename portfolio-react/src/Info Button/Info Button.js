@@ -50,7 +50,7 @@ class InfoButton extends Component {
       return (
         <div>
           <div className="moreInfoButton">
-            <a target="_blank" onClick={this.infoClickHandler}>
+            <a className="infoButtonA" target="_blank" onClick={this.infoClickHandler}>
               More info
             </a>
             <HackSeaModal
@@ -67,7 +67,7 @@ class InfoButton extends Component {
       return (
         <div>
           <div className="moreInfoButton">
-            <a target="_blank" onClick={this.infoClickHandler}>
+            <a className="infoButtonA" target="_blank" onClick={this.infoClickHandler}>
               More info
             </a>
             <HaccModal
@@ -84,7 +84,7 @@ class InfoButton extends Component {
       return (
         <div>
           <div className="moreInfoButton">
-            <a target="_blank" onClick={this.infoClickHandler}>
+            <a className="infoButtonA" target="_blank" onClick={this.infoClickHandler}>
               More info
             </a>
             <BPModal
@@ -101,7 +101,7 @@ class InfoButton extends Component {
       return (
         <div>
           <div className="moreInfoButton">
-            <a target="_blank" onClick={this.infoClickHandler}>
+            <a className="infoButtonA" target="_blank" onClick={this.infoClickHandler}>
               More info
             </a>
             <MarvelModal
@@ -115,7 +115,7 @@ class InfoButton extends Component {
     return (
       <div>
         <div className="moreInfoButton">
-          <a target="_blank" onClick={this.infoClickHandler}>
+          <a className="infoButtonA" target="_blank" onClick={this.infoClickHandler}>
             More info
           </a>
         </div>
