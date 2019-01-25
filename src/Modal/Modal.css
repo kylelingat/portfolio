@@ -162,13 +162,13 @@
 
 .previousSwitch {
   background-color: var(--vGit-color);
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px;
   grid-template-columns: 10% 90%;
 }
 
 .nextSwitch {
   background-color: var(--vMore-color);
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px;
   grid-template-columns: 90% 10%;
 }
 
@@ -194,7 +194,27 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .modal-content {
+    width: 100%;
+  }
   
+  .topBar {
+    grid-template-columns: 90% 10%;
+  }
+
+  .topBar h2 {
+    font-size: 1em;
+  }
+
+  .modalSwitchContainer {
+    grid-template-columns: 9fr 4fr 9fr;
+  }
+  
+  .previousSwitch p,
+  .nextSwitch p {
+    font-size: 0.8em;
+  }
+
   .previousSwitch {
     grid-template-columns: 20% 80%;
   }

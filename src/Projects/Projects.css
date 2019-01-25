@@ -240,12 +240,14 @@
   .projectTitle h2 {
     margin: auto;
     font-size: 1em;
+    letter-spacing: 0.5px;
   }
 
   .visitSiteButton a,
   .visitGithubButton a,
-  .moreInfoButton a {
-    padding: 7px;
+  .infoButtonA {
+    padding: 7px !important;
     font-size: 10px;
+    letter-spacing: 0.8px !important;
   }
 }

@@ -88,5 +88,9 @@
     #arrowDown svg {
       font-size: 1.4em;
     }
+
+    #arrowDown {
+      bottom: 5px;
+    }
   }
   
