@@ -7,9 +7,9 @@
 #projectsContainer h1 {
   text-align: center;
   padding-top: 1.5em;
-  opacity: 0.7;
+  opacity: 0.75;
   font-size: 1.4em;
-  color: white;
+  color: var(--textMain-color);
   letter-spacing: 1.4px;
 }
 
@@ -62,7 +62,7 @@
 .projectTitle h2 {
   /* text-align: center; */
   font-family: "Lato";
-  color: white;
+  color: var(--textMain-color);
   opacity: 0.85;
   letter-spacing: 1.5px;
   font-weight: 700;
@@ -78,7 +78,7 @@
 .projectDesc p {
   text-align: left;
   font-family: "Roboto";
-  color: rgba(227, 230, 233, 0.95);
+  color: var(--textMain-color);
   opacity: 0.85;
   line-height: 24px;
   font-weight: 200;

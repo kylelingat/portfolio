@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Main.css";
+import ColorBar from '../Color Bar/Color Bar.js'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,6 +28,7 @@ class Main extends Component {
             </a>
           </div>
         </div>
+        <ColorBar />
         <div id="arrowDown">
           <AnchorLink href="#t">
             <FontAwesomeIcon icon={faArrowCircleDown} />

@@ -8,7 +8,7 @@
   }
   
   #introText {
-    color: #E0E0E0;
+    color: var(--textMain-color);
     text-align: center;
     border-left: 13px solid white;
     padding: 4em;
@@ -38,7 +38,8 @@
   
   #contactBar a {
     text-decoration: none;
-    color: #E0E0E0;
+    color: var(--textMain-color);
+    opacity: 0.7;
   }
   
   #contactBar svg {
@@ -63,7 +64,7 @@
   
   #arrowDown svg {
     font-size: 2.4em;
-    color: white;
+    color: var(--textMain-color);
     transition: 0.3s cubic-bezier(.17,.67,.83,.67);
     cursor: pointer;
   }

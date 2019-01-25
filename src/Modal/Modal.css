@@ -64,7 +64,7 @@
 }
 
 .topBar h2 {
-  color: white;
+  color: var(--textMain-color);
   text-align: center;
   font-family: "Lato";
   letter-spacing: 1.5px;
@@ -80,7 +80,7 @@
 }
 
 .contentContainer {
-  background-color: #39445c;
+  background-color: var(--modalThird-color);
   font-family: "Roboto";
   text-align: left;
   color: white;
@@ -113,6 +113,7 @@
   font-size: 1.2em;
   line-height: 30px;
   letter-spacing: 0.5px;
+  color: var(--textMain-color);
 }
 
 .bottomBar {
@@ -204,6 +205,7 @@
 
   .topBar h2 {
     font-size: 1em;
+    letter-spacing: 0.5px;
   }
 
   .modalSwitchContainer {
