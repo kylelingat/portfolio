@@ -15,10 +15,14 @@
   cursor: pointer;
 }
 
+.darkTheme {
+    background: #222431;
+  }
+  
 .lightTheme {
   background: #ffffff;
 }
 
-.darkTheme {
-  background: #222431;
+.yellowTheme {
+    background: #f9ed69;
 }

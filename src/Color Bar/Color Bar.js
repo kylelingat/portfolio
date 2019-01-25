@@ -22,6 +22,15 @@ export default class ColorBar extends Component {
         "vGit-color": "#2c3e50",
         "vMore-color": "#502c3e",
         "textMain-color": "#505050"
+      },
+      yellow: {
+        "main-color": "#f9ed69",
+        "secondary-color": "#fbfbfb",
+        "modalThird-color": "#E0E0E0",
+        "vSite-color": "#f08a5d",
+        "vGit-color": "#b83b5e",
+        "vMore-color": "#6a2c70",
+        "textMain-color": "#505050"
       }
     }
   };
@@ -51,7 +60,14 @@ export default class ColorBar extends Component {
         },
         this.setTheme
       );
-    }
+    } else if (color === "yellow") {
+        this.setState(
+          {
+            currTheme: "yellow"
+          },
+          this.setTheme
+        );
+        }
   };
 
   render() {
@@ -59,7 +75,7 @@ export default class ColorBar extends Component {
         <div className="colorBarContainer">
             <div className="colorBarItem darkTheme" onClick={this.themeSwitchHandler.bind(this, 'dark')} ></div>
             <div className="colorBarItem lightTheme" onClick={this.themeSwitchHandler.bind(this, "light")} ></div>
-            <div className="colorBarItem" ></div>
+            <div className="colorBarItem yellowTheme" onClick={this.themeSwitchHandler.bind(this, "yellow")} ></div>
         </div>
     );
   }

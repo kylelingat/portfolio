@@ -10,7 +10,7 @@
   #introText {
     color: var(--textMain-color);
     text-align: center;
-    border-left: 13px solid white;
+    border-left: 13px solid var(--textMain-color);
     padding: 4em;
   }
   
