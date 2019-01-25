@@ -9,7 +9,7 @@
   padding-top: 1.5em;
   opacity: 0.75;
   font-size: 1.4em;
-  color: var(--textMain-color);
+  color: var(--textProject-color);
   letter-spacing: 1.4px;
 }
 
@@ -62,7 +62,7 @@
 .projectTitle h2 {
   /* text-align: center; */
   font-family: "Lato";
-  color: var(--textMain-color);
+  color: var(--textProject-color);
   opacity: 0.85;
   letter-spacing: 1.5px;
   font-weight: 700;
@@ -78,7 +78,7 @@
 .projectDesc p {
   text-align: left;
   font-family: "Roboto";
-  color: var(--textMain-color);
+  color: var(--textProject-color);
   opacity: 0.85;
   line-height: 24px;
   font-weight: 200;
@@ -185,19 +185,19 @@
 .visitSiteButton a:hover {
   color: var(--vSite-color);
   background-color: transparent;
-  filter: brightness(1.5);
+  
 }
 
 .visitGithubButton a:hover {
   color: var(--vGit-color);
   background-color: transparent;
-  filter: brightness(1.5);
+  
 }
 
 .moreInfoButton a:hover {
   color: var(--vMore-color);
   background-color: transparent;
-  filter: brightness(1.5);
+  
 }
 
 @media only screen and (max-width: 1024px) {

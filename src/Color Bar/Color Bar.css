@@ -18,11 +18,31 @@
 .darkTheme {
     background: #222431;
   }
-  
+
 .lightTheme {
   background: #ffffff;
 }
 
 .yellowTheme {
     background: #f9ed69;
+}
+
+.redTheme {
+    background: #e23e57;
+}
+
+.blueTheme {
+    background: #3ec1d3;
+}
+
+.orangeTheme {
+    background: #ff8f56;
+}
+
+.greenTheme {
+    background: #20716a;
+}
+
+.violetTheme {
+    background: #5d50c6;
 }
