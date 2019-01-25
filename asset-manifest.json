@@ -1,9 +1,9 @@
 {
-  "main.css": "/portfolio/static/css/main.9c3a8757.chunk.css",
-  "main.js": "/portfolio/static/js/main.df32525e.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.df32525e.chunk.js.map",
-  "static/js/1.877f972b.chunk.js": "/portfolio/static/js/1.877f972b.chunk.js",
-  "static/js/1.877f972b.chunk.js.map": "/portfolio/static/js/1.877f972b.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.77b7ac7c.chunk.css",
+  "main.js": "/portfolio/static/js/main.fe69ba49.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.fe69ba49.chunk.js.map",
+  "static/js/1.cf6d0c80.chunk.js": "/portfolio/static/js/1.cf6d0c80.chunk.js",
+  "static/js/1.cf6d0c80.chunk.js.map": "/portfolio/static/js/1.cf6d0c80.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
   "runtime~main.js.map": "/portfolio/static/js/runtime~main.ee2a1003.js.map",
   "static/media/hacksea.png": "/portfolio/static/media/hacksea.e41b8f51.png",
@@ -12,8 +12,8 @@
   "static/media/blueplanet.png": "/portfolio/static/media/blueplanet.ed1bcc82.png",
   "static/media/marvelApi.png": "/portfolio/static/media/marvelApi.387381fc.png",
   "static/media/hacksea2.png": "/portfolio/static/media/hacksea2.c8c8a015.png",
-  "static/css/main.9c3a8757.chunk.css.map": "/portfolio/static/css/main.9c3a8757.chunk.css.map",
+  "static/css/main.77b7ac7c.chunk.css.map": "/portfolio/static/css/main.77b7ac7c.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.c4653281de2d0803e347a20c577f32ca.js": "/portfolio/precache-manifest.c4653281de2d0803e347a20c577f32ca.js",
+  "precache-manifest.f348c808b4063e4db7bbfe98527df8dd.js": "/portfolio/precache-manifest.f348c808b4063e4db7bbfe98527df8dd.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }

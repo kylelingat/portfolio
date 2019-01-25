@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/hacksea2.c8c8a015.png"
   },
   {
-    "revision": "df32525e84e79ca7867d",
-    "url": "/portfolio/static/css/main.9c3a8757.chunk.css"
+    "revision": "fe69ba491e9f66423d97",
+    "url": "/portfolio/static/css/main.77b7ac7c.chunk.css"
   },
   {
-    "revision": "877f972b987c20057373",
-    "url": "/portfolio/static/js/1.877f972b.chunk.js"
+    "revision": "cf6d0c80b52372b97912",
+    "url": "/portfolio/static/js/1.cf6d0c80.chunk.js"
   },
   {
     "revision": "ee2a100325fd284f0097",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/hacksea.e41b8f51.png"
   },
   {
-    "revision": "df32525e84e79ca7867d",
-    "url": "/portfolio/static/js/main.df32525e.chunk.js"
+    "revision": "fe69ba491e9f66423d97",
+    "url": "/portfolio/static/js/main.fe69ba49.chunk.js"
   },
   {
     "revision": "bf7c71421daafd145ef7cdcb5822d5a2",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/marvelApi.387381fc.png"
   },
   {
-    "revision": "1f87b4086289432bc15baa1a212c13ab",
+    "revision": "77f59be95868b90bb5392780a8c0a992",
     "url": "/portfolio/index.html"
   }
 ];
