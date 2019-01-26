@@ -13,6 +13,11 @@
   width: 25px;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.colorBarItem:hover {
+ border-radius: 30%;
 }
 
 .darkTheme {
