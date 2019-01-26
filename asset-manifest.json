@@ -1,7 +1,7 @@
 {
-  "main.css": "/portfolio/static/css/main.5226a926.chunk.css",
-  "main.js": "/portfolio/static/js/main.23f24915.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.23f24915.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.1811fcb0.chunk.css",
+  "main.js": "/portfolio/static/js/main.f533ab20.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.f533ab20.chunk.js.map",
   "static/js/1.cf6d0c80.chunk.js": "/portfolio/static/js/1.cf6d0c80.chunk.js",
   "static/js/1.cf6d0c80.chunk.js.map": "/portfolio/static/js/1.cf6d0c80.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
@@ -12,8 +12,8 @@
   "static/media/blueplanet.png": "/portfolio/static/media/blueplanet.ed1bcc82.png",
   "static/media/marvelApi.png": "/portfolio/static/media/marvelApi.387381fc.png",
   "static/media/hacksea2.png": "/portfolio/static/media/hacksea2.c8c8a015.png",
-  "static/css/main.5226a926.chunk.css.map": "/portfolio/static/css/main.5226a926.chunk.css.map",
+  "static/css/main.1811fcb0.chunk.css.map": "/portfolio/static/css/main.1811fcb0.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.6d0a03949e58113bb50a131e306a100a.js": "/portfolio/precache-manifest.6d0a03949e58113bb50a131e306a100a.js",
+  "precache-manifest.3ca6b40688a13f85cc2e8c08f124312d.js": "/portfolio/precache-manifest.3ca6b40688a13f85cc2e8c08f124312d.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }
