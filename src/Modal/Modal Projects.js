@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import projectData from "../Projects Data/ProjectData.js";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -29,11 +28,11 @@ export class HackSeaModal extends Component {
     }
   };
 
-  mainImgBg = {
+  mainImg = {
     backgroundImage: `url(${projectData.hackSeaInfo.mainImg})`
   };
 
-  secondImgBg = {
+  img2 = {
     backgroundImage: `url(${projectData.hackSeaInfo.img2})`
   };
 
@@ -59,11 +58,11 @@ export class HackSeaModal extends Component {
           </div>
           <div className="midModal">
             <div id="topAnchor" className="contentContainer">
-              <div className="modalProjectImage" style={this.mainImgBg} />
+              <div className="modalProjectImage" style={this.mainImg} />
               <p className="modalDescription">
                 {projectData.hackSeaInfo.description}
               </p>
-              <div className="modalProjectImage" style={this.secondImgBg} />
+              <div className="modalProjectImage" style={this.img2} />
               <p className="modalDescription">
                 {projectData.hackSeaInfo.description2}
               </p>
@@ -136,8 +135,16 @@ export class HaccModal extends Component {
     }
   };
 
-  mainImgBg = {
+  mainImg = {
     backgroundImage: `url(${projectData.haccInfo.mainImg})`
+  };
+
+  img2 = {
+    backgroundImage: `url(${projectData.haccInfo.img2})`
+  };
+
+  img3 = {
+    backgroundImage: `url(${projectData.haccInfo.img3})`
   };
 
   render() {
@@ -158,9 +165,17 @@ export class HaccModal extends Component {
           </div>
           <div className="midModal">
             <div id="topAnchor" className="contentContainer">
-              <div className="modalProjectImage" style={this.mainImgBg} />
+              <div className="modalProjectImage" style={this.mainImg} />
               <p className="modalDescription">
                 {projectData.haccInfo.description}
+              </p>
+              <div className="modalProjectImage" style={this.img2} />
+              <p className="modalDescription">
+                {projectData.haccInfo.description2}
+              </p>
+              <div className="modalProjectImage" style={this.img3} />
+              <p className="modalDescription">
+                {projectData.haccInfo.description3}
               </p>
             </div>
             <div className="bottomBar">
@@ -179,7 +194,7 @@ export class HaccModal extends Component {
                   <p>Previous</p>
                 </div>
                 <div className="backTopSwitch">
-                <a href="#topAnchor">
+                  <a href="#topAnchor">
                     <FontAwesomeIcon icon={faArrowAltCircleUp} />
                   </a>
                 </div>
@@ -222,13 +237,26 @@ export class BPModal extends Component {
     }
   };
 
-  mainImgBg = {
+  mainImg = {
     backgroundImage: `url(${projectData.bluePlanetInfo.mainImg})`
   };
 
-  secondImgBg = {
-    backgroundImage: `url(${projectData.bluePlanetInfo.mainImg})`
+  img2 = {
+    backgroundImage: `url(${projectData.bluePlanetInfo.img2})`
   };
+
+  img3 = {
+    backgroundImage: `url(${projectData.bluePlanetInfo.img3})`
+  };
+
+  img4 = {
+    backgroundImage: `url(${projectData.bluePlanetInfo.img4})`
+  };
+
+  img5 = {
+    backgroundImage: `url(${projectData.bluePlanetInfo.img5})`
+  };
+
 
   render() {
     return (
@@ -248,11 +276,28 @@ export class BPModal extends Component {
           </div>
           <div className="midModal">
             <div id="topAnchor" className="contentContainer">
-              <div className="modalProjectImage" style={this.mainImgBg} />
+              <div className="modalProjectImage" style={this.mainImg} />
               <p className="modalDescription">
                 {projectData.bluePlanetInfo.description}
               </p>
+              <div className="modalProjectImage" style={this.img2} />
+              <p className="modalDescription">
+                {projectData.bluePlanetInfo.desc2}
+              </p>
+              <div className="modalProjectImage" style={this.img3} />
+              <p className="modalDescription">
+                {projectData.bluePlanetInfo.desc3}
+              </p>
+              <div className="modalProjectImage" style={this.img4} />
+              <p className="modalDescription">
+                {projectData.bluePlanetInfo.desc4}
+              </p>
+              <div className="modalProjectImage" style={this.img5} />
+              <p className="modalDescription">
+                {projectData.bluePlanetInfo.desc5}
+              </p>
             </div>
+
             <div className="bottomBar">
               <div className="modalSwitchContainer">
                 <div
@@ -269,7 +314,7 @@ export class BPModal extends Component {
                   <p>Previous</p>
                 </div>
                 <div className="backTopSwitch">
-                <a href="#topAnchor">
+                  <a href="#topAnchor">
                     <FontAwesomeIcon icon={faArrowAltCircleUp} />
                   </a>
                 </div>
@@ -312,9 +357,13 @@ export class MarvelModal extends Component {
     }
   };
 
-  mainImgBg = {
+  mainImg = {
     backgroundImage: `url(${projectData.marvelApiInfo.mainImg})`
   };
+
+  img2 = {
+    backgroundImage: `url(${projectData.marvelApiInfo.img2})`
+  }
 
   render() {
     return (
@@ -334,9 +383,13 @@ export class MarvelModal extends Component {
           </div>
           <div className="midModal">
             <div id="topAnchor" className="contentContainer">
-              <div className="modalProjectImage" style={this.mainImgBg} />
+              <div className="modalProjectImage" style={this.mainImg} />
               <p className="modalDescription">
                 {projectData.marvelApiInfo.description}
+              </p>
+              <div className="modalProjectImage" style={this.img2} />
+              <p className="modalDescription">
+                {projectData.marvelApiInfo.desc2}
               </p>
             </div>
             <div className="bottomBar">
@@ -355,7 +408,7 @@ export class MarvelModal extends Component {
                   <p>Previous</p>
                 </div>
                 <div className="backTopSwitch">
-                <a href="#topAnchor">
+                  <a href="#topAnchor">
                     <FontAwesomeIcon icon={faArrowAltCircleUp} />
                   </a>
                 </div>

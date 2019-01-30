@@ -36,7 +36,8 @@
 }
 
 .projectGridItem:hover {
-  border: 1px solid rgba(255, 255, 255, 0.075);
+  /* border: 1px solid var(--projBorder-color); */
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .projectImageBackground {
@@ -63,7 +64,7 @@
   /* text-align: center; */
   font-family: "Lato";
   color: var(--textProject-color);
-  opacity: 0.85;
+  opacity: 0.88;
   letter-spacing: 1.5px;
   font-weight: 700;
   margin: 0px;
@@ -79,7 +80,7 @@
   text-align: left;
   font-family: "Roboto";
   color: var(--textProject-color);
-  opacity: 0.85;
+  opacity: 0.80;
   line-height: 24px;
   font-weight: 200;
   font-size: 1em;

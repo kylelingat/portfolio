@@ -14,7 +14,8 @@ export default class ColorBar extends Component {
         "vMore-color": "#e74c3c",
         "textMain-color": "#E0E0E0",
         "textProject-color": "#E0E0E0",
-        "backTop-color": "#222431"
+        "backTop-color": "#222431",
+        "projBorder-color": "rgba(255, 255, 255, 0.075)"
       },
       light: {
         "main-color": "#ffffff",
@@ -25,7 +26,8 @@ export default class ColorBar extends Component {
         "vMore-color": "#502c3e",
         "textMain-color": "#505050",
         "textProject-color": "#000000",
-        "backTop-color": "#E0E0E0"
+        "backTop-color": "#E0E0E0",
+        "projBorder-color": "rgba(0,0,0,0.25)"
       },
       yellow: {
         "main-color": "#f9ed69",
@@ -36,7 +38,8 @@ export default class ColorBar extends Component {
         "vMore-color": "#6a2c70",
         "textMain-color": "#ffffff",
         "textProject-color": "#000000",
-        "backTop-color": "#f9ed69"
+        "backTop-color": "#f9ed69",
+        "projBorder-color": "rgba(0,0,0,0.25)"
       },
       red: {
         "main-color": "#e23e57",
@@ -47,7 +50,8 @@ export default class ColorBar extends Component {
         "vMore-color": "#311d3f",
         "textMain-color": "#E0E0E0",
         "textProject-color": "#000000",
-        "backTop-color": "#e23e57"
+        "backTop-color": "#e23e57",
+        "projBorder-color": "rgba(0,0,0,0.25)"
       },
       blue: {
         "main-color": "#3ec1d3",
@@ -58,7 +62,8 @@ export default class ColorBar extends Component {
         "vMore-color": "#ff165d",
         "textMain-color": "#ffffff",
         "textProject-color": "#000000",
-        "backTop-color": "#3ec1d3"
+        "backTop-color": "#3ec1d3",
+        "projBorder-color": "rgba(0,0,0,0.25)"
       },
       orange: {
         "main-color": "#ff8f56",
@@ -69,7 +74,8 @@ export default class ColorBar extends Component {
         "vMore-color": "#60424c",
         "textMain-color": "#ffffff",
         "textProject-color": "#000000",
-        "backTop-color": "#ff8f56"
+        "backTop-color": "#ff8f56",
+        "projBorder-color": "rgba(0,0,0,0.25)"
       },
       green: {
         "main-color": "#20716a",
@@ -80,7 +86,8 @@ export default class ColorBar extends Component {
         "vMore-color": "#f8d0b0",
         "textMain-color": "#ffffff",
         "textProject-color": "#000000",
-        "backTop-color": "#20716a"
+        "backTop-color": "#20716a",
+        "projBorder-color": "rgba(0,0,0,0.25)"
       },
       violet: {
         "main-color": "#5d50c6",
@@ -91,14 +98,14 @@ export default class ColorBar extends Component {
         "vMore-color": "#facd49",
         "textMain-color": "#ffffff",
         "textProject-color": "#000000",
-        "backTop-color": "#5d50c6"
+        "backTop-color": "#5d50c6",
+        "projBorder-color": "rgba(0,0,0,0.25)"
       }
     }
   };
 
   setTheme = () => {
     const theme = this.state.themes[this.state.currTheme];
-    console.log(theme);
     Object.keys(theme).forEach(key => {
       const cssKey = `--${key}`;
       const cssValue = theme[key];
