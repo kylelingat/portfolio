@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import projectData from "../Projects Data/ProjectData.js";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
-library.add(faArrowLeft, faArrowRight);
-library.add(faArrowAltCircleUp);
+import { faArrowLeft, faArrowRight, faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
+library.add(faArrowLeft, faArrowRight, faArrowAltCircleUp);
 
 export class HackSeaModal extends Component {
   state = {

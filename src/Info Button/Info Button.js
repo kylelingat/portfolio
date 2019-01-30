@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-import Modal from "../Modal/Modal.js";
-import projectData from "../Projects Data/ProjectData.js";
 import {
   HackSeaModal,
   HaccModal,
   BPModal,
   MarvelModal
 } from "../Modal/Modal Projects.js";
+import Modal from "../Modal/Modal.js";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+library.add(faInfoCircle);
 
 class InfoButton extends Component {
   state = {
@@ -27,7 +30,7 @@ class InfoButton extends Component {
       console.log("previous", proj);
       this.setState({ projectParent: proj });
     } else if (button === "next") {
-      console.log("next", proj)
+      console.log("next", proj);
       this.setState({ projectParent: proj });
     }
   };
@@ -47,7 +50,11 @@ class InfoButton extends Component {
       return (
         <div>
           <div className="moreInfoButton">
-            <a className="infoButtonA" target="_blank" onClick={this.infoClickHandler}>
+            <a
+              className="infoButtonA"
+              target="_blank"
+              onClick={this.infoClickHandler}
+            >
               More info
             </a>
             <HackSeaModal
@@ -64,7 +71,11 @@ class InfoButton extends Component {
       return (
         <div>
           <div className="moreInfoButton">
-            <a className="infoButtonA" target="_blank" onClick={this.infoClickHandler}>
+            <a
+              className="infoButtonA"
+              target="_blank"
+              onClick={this.infoClickHandler}
+            >
               More info
             </a>
             <HaccModal
@@ -81,7 +92,11 @@ class InfoButton extends Component {
       return (
         <div>
           <div className="moreInfoButton">
-            <a className="infoButtonA" target="_blank" onClick={this.infoClickHandler}>
+            <a
+              className="infoButtonA"
+              target="_blank"
+              onClick={this.infoClickHandler}
+            >
               More info
             </a>
             <BPModal
@@ -98,7 +113,11 @@ class InfoButton extends Component {
       return (
         <div>
           <div className="moreInfoButton">
-            <a className="infoButtonA" target="_blank" onClick={this.infoClickHandler}>
+            <a
+              className="infoButtonA"
+              target="_blank"
+              onClick={this.infoClickHandler}
+            >
               More info
             </a>
             <MarvelModal
@@ -112,8 +131,12 @@ class InfoButton extends Component {
     return (
       <div>
         <div className="moreInfoButton">
-          <a className="infoButtonA" target="_blank" onClick={this.infoClickHandler}>
-            More info
+          <a
+            className="infoButtonA"
+            target="_blank"
+            onClick={this.infoClickHandler}
+          >
+            <FontAwesomeIcon icon={faInfoCircle} />&nbsp;&nbsp;More info
           </a>
         </div>
       </div>

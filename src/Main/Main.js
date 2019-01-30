@@ -9,8 +9,7 @@ import {
   faArrowCircleDown
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-library.add(faEnvelope, faArrowCircleDown);
-library.add(faGithub);
+library.add(faEnvelope, faArrowCircleDown, faGithub);
 
 class Main extends Component {
   render() {

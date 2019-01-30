@@ -1,6 +1,11 @@
 import React from "react";
 import InfoButton from "../Info Button/Info Button.js";
 import projectData from "../Projects Data/ProjectData.js";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+library.add(faSignOutAlt, faGithub)
 
 const ProjectItem = props => {
   var projectImageBackground = {
@@ -19,12 +24,12 @@ const ProjectItem = props => {
       <div className="buttonGrid">
         <div className="visitSiteButton">
           <a href={props.hrefSite} target="_blank">
-            Visit Site
+            <FontAwesomeIcon icon={faSignOutAlt} / >&nbsp;&nbsp;Visit Site
           </a>
         </div>
         <div className="visitGithubButton">
           <a href={props.hrefGit} target="_blank">
-            Visit Github
+            <FontAwesomeIcon icon={faGithub} / >&nbsp;&nbsp;Visit Github
           </a>
         </div>
 
