@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/hacc3.59bdd166.png"
   },
   {
-    "revision": "6d6f2abd297da2337e83",
-    "url": "/portfolio/static/css/main.235f4d51.chunk.css"
+    "revision": "5f44e6ac83f74ada8b89",
+    "url": "/portfolio/static/css/main.b9584d75.chunk.css"
   },
   {
     "revision": "3f63cdda55f4a7a38d52",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/hacc2.ad93d572.png"
   },
   {
-    "revision": "6d6f2abd297da2337e83",
-    "url": "/portfolio/static/js/main.6d6f2abd.chunk.js"
+    "revision": "5f44e6ac83f74ada8b89",
+    "url": "/portfolio/static/js/main.5f44e6ac.chunk.js"
   },
   {
     "revision": "ed1bcc82bcdf2647fb63d8286031d8dd",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/marvelApi2.e8f642a7.png"
   },
   {
-    "revision": "fbaaf60b903ac50deac8746bf8520359",
+    "revision": "c5876bbc90c3559cab22a6be715d5d5e",
     "url": "/portfolio/index.html"
   }
 ];
