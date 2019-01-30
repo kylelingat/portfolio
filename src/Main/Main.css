@@ -93,7 +93,7 @@
     .colorBarContainer {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       top: 10px;
-      left: auto
+      left: auto !important;
     }
 
     #arrowDown {
