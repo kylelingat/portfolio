@@ -16,9 +16,7 @@
   z-index: -1;
 }
 /* Modal Content */
-.modal-content {
-  background-color: var(--main-color);
-  
+.modal-content {  
   margin: auto;
   /* padding: 20px; */
   width: 93%;
@@ -82,7 +80,6 @@
 }
 
 .contentContainer {
-  background-color: var(--modalThird-color);
   font-family: "Roboto";
   text-align: left;
   color: white;
